@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { Routes,Route } from 'react-router-dom'
+import {  Home, Navigation} from './components/index'
 
 const App = () => {
   return (
-    <div>App</div>
+
+    <div>
+<Navigation.default/>
+        <Routes>
+            <Route exact path='/' element={<Home.default/>}/>
+
+        </Routes>
+    </div>
   )
 }
 
