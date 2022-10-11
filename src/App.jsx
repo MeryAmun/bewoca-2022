@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import { Routes,Route } from 'react-router-dom'
 import {  Home, Navigation} from './components/index'
@@ -8,7 +9,7 @@ const App = () => {
     <div>
 <Navigation.default/>
         <Routes>
-            <Route exact path='/' element={<Home.default/>}/>
+          <Route exact path='/' element={<Home.default/>}/>
 
         </Routes>
     </div>

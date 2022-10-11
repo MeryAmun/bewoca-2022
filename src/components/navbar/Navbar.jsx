@@ -11,7 +11,7 @@ import { logo } from '../../assets';
 
   return (
     <div>
-      <Navbar className="d-flex justify-content-between">
+      <Navbar className="nav d-flex justify-content-between">
         <Navbar.Brand className="" href="/">
           <div className="logo__container">
           <img
@@ -63,6 +63,7 @@ import { logo } from '../../assets';
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
           </Form></Nav.Item>
       </Nav>
+
     </div>
   );
   }
