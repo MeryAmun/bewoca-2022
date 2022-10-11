@@ -9,6 +9,10 @@ import Imagea2 from "./images/a2.jpg"
 import Imagea1 from "./images/a1.jpg"
 import war1 from "./images/a2.jpg";
 import war2 from "./images/a1.jpg";
+import {FaFacebookSquare,FaTwitterSquare,FaInstagramSquare} from 'react-icons/fa';
+
+
+
 export {
-    logo,Image1,Image2,Image3,Imagea2,Imagea4,Imagea5,Imagea6,Imagea1,war1,war2
+    logo,Image1,Image2,Image3,Imagea2,Imagea4,Imagea5,Imagea6,Imagea1,war1,war2,FaFacebookSquare,FaInstagramSquare,FaTwitterSquare
 }

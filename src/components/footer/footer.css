@@ -1,0 +1,30 @@
+.footer {
+    /* background-color: rgba(15, 13, 13,0.3); */
+    background-color: black;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: .5rem 0;
+    height: 100%;
+  } 
+
+  .links-container{
+     width: 60%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .5rem;
+  }
+  .tex{
+      display: flex;
+      align-self: center;
+      margin-top: 3rem;
+  }
+
+  .icons span{
+      margin: .3rem;
+  }
