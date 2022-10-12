@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from "react";
-import { Container, Button, Nav } from "react-bootstrap";
+import { Container, Button, Nav} from "react-bootstrap";
 import { AsideCard, CarouselCard } from "../../cards";
 import { Image1, Image2, Image3,Imagea6, war1, war2} from "../../assets/index";
 import "./home.css";
@@ -10,18 +10,19 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="home">
+      
       <CarouselCard.default
         title2='Cross-section of some Products.'
         image={Image3}
         image1={Image1}
         image2={Image2}
-        image3={Imagea6}
+        
 
       />
-      <Container className="main">
-          <section>
-              <div className="paragragh">
-                <p className="">
+      <Container className="main-container">
+          <section className="section">
+              <div className="subsection">
+                <p className="paragraph">
                   Welcome to Better World Community And Advocacy Organization
                   (BEWOCA) official website.Here we belief that a little effort
                   can make alot of difference in the life of an individual.We
@@ -35,7 +36,7 @@ const Home = () => {
                   </Nav.Item>
                 </Button>
               </div>
-            <aside>
+            <aside className="aside">
               <AsideCard.default
               title='Empower a woman, save a family'
               text='Sponsor an Internally displaced person to learn a trade or

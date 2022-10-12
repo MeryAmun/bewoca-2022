@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
 }
-section{
+/* section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,8 +16,23 @@ section{
 aside{
     margin-top: 20rem;
     margin-right: -7rem;
-}
+} */
 
 .paragragh{
     margin: 2rem;
 }
+
+@media only screen and (max-width: 400px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    aside{
+        margin-top: 3rem;
+        margin-right: 0rem;
+    }
+  }

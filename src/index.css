@@ -13,7 +13,7 @@
     --medium-font: 500;
     --bold-font: 700;
   
-  
+ 
     --color-golden: #FD951C;
     --category-heading:#50565A;
     --color-blur: #D3D3E2;
@@ -35,10 +35,59 @@
   
   body{
     height: 100%;
+  
   }
-/* 
-  .custom_large_image{
-      width: ;
+
+
+  /* .App{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   } */
 
+.main-container{
+  margin-top: 20rem;
+  margin-bottom: 3rem;
+   
+}
   
+.paragraph{
+  font-size: 18px;
+  font-family: var(--font-base);
+  font-weight: var(--regular-font);
+  line-height: 26px;
+}
+
+.section{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+ 
+}
+.subsection{
+flex: 2;
+margin-right: 3rem;
+border: 1px solid rgb(219, 215, 215);
+padding: 1rem;
+border-radius: 5px;
+}
+.aside{
+  border: 1px solid rgb(219, 215, 215);
+flex: 1;
+margin-left: 1rem;
+padding: 1rem;
+border-radius: 5px;
+}
+
+.asideTitle{
+  font-size: 20px;
+}
+.asideText{
+  font-size: 22px;
+font-size: var(--font-base);
+font-weight: var(--almost-regular);
+line-height: 20px;
+}

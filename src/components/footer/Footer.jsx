@@ -35,7 +35,7 @@ const Footer = () => {
             <Nav.Link href="/rights">Violence</Nav.Link>
             </div>
           </div>
-    <div className="tex text-primary">All Rights Reserved BEWOCA &copy; {date}</div>
+    <div className="tex text-primary">Copy Right &copy; BEWOCA  {date}</div>
         </div>
   )
 }

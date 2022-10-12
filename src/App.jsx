@@ -1,15 +1,16 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import { Routes,Route } from 'react-router-dom'
-import {  Footer, Home, Navigation} from './components/index'
+import {  About, Footer, Home, Navigation} from './components/index'
 
 const App = () => {
   return (
 
-    <div>
+    <div className='App'>
 <Navigation.default/>
         <Routes>
           <Route exact path='/' element={<Home.default/>}/>
+          <Route  path='/about' element={<About.default/>}/>
 
         </Routes>
         <Footer.default/>

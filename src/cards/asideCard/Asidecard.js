@@ -7,10 +7,10 @@ const AsideCard = ({ title, text, image, buttonTitle }) => {
       </div>
       <Card.Body>
         <Card.Title>
-          <h3 className="font-weight-bold text-info">{title}</h3>
+          <h3 className="font-weight-bold text-info asideTitle">{title}</h3>
         </Card.Title>
-        <Card.Text>{text}</Card.Text>
-        <Button className="font-weight-bold bg-dark">
+        <Card.Text className="asideText">{text}</Card.Text>
+        <Button className="font-weight-bold bg-dark text-primary">
           {" "}
           <Nav.Item>
             <Nav.Link href="/donate">{buttonTitle}</Nav.Link>
