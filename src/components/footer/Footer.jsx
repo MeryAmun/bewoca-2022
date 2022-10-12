@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import './footer.css';
-import {GrFacebookOption,GrTwitter,GrInstagram} from 'react-icons/gr';
+
 
 const Footer = () => {
     const date = new Date().getFullYear()

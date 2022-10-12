@@ -2,7 +2,7 @@
 import React from "react";
 import { Container, Button, Nav} from "react-bootstrap";
 import { AsideCard, CarouselCard } from "../../cards";
-import { Image1, Image2, Image3,Imagea6, war1, war2} from "../../assets/index";
+import { Image1, Image2, Image3, war2} from "../../assets/index";
 import "./home.css";
 
 // import { Image,Image1,Image2,Image3,Image4,Image5 } from '@mui/icons-material';

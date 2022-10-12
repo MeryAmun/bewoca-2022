@@ -1,0 +1,50 @@
+.contact{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.contact-header{
+    margin-top: 2rem;
+text-align: center;
+font-size: 22px;
+font-size: var(--font-base);
+font-weight: var( --medium-font);
+}
+.sentence{
+    font-size: 22px;
+    font-size: var(--font-base);
+    font-weight: var( --medium-font); 
+}
+.contact-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.social-media span{
+    margin-right: 1rem;
+}
+.tex{
+    margin-bottom: 3rem;
+}
+.applications {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
