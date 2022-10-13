@@ -17,7 +17,7 @@ const Contact = () => {
         </div>
         <div className="officeAddress">
         <h3 className="title font-weight-bold text-secondary">OUR REGISTERED OFFICE</h3>
-          <p>Our registered office is located at <h4 className="title font-weight-bold text-secondary">Red field Nghomham Bamenda Cameroon</h4></p>
+          <p className='sentence'>Our registered office is located at <h4 className="title font-weight-bold text-secondary">Red field Nghomham Bamenda Cameroon</h4></p>
           <p className='sentence'>You can also contact us on phone through the following numbers</p>
           
           <h3 className="title font-weight-bold text-secondary"> <i className="fa fa-whatsapp" aria-hidden="true"></i>(+237) 674513391</h3>
