@@ -1,10 +1,10 @@
 import { Nav, Button, Card } from "react-bootstrap";
-import './aside.css'
-const AsideCard = ({ title, text, image, buttonTitle }) => {
+import './donateCard.css'
+const DonateCard = ({ title, text, image, buttonTitle }) => {
   return (
     <Card className="card border bg-secondary text-white">
-      <div className="asideFloat d-flex flex-wrap">
-        <img className="d-block" src={image} alt="Third slide" />
+      <div className="asideImage">
+        <img className="" src={image} alt="Third slide" />
       </div>
       <Card.Body>
         <Card.Title>
@@ -21,4 +21,4 @@ const AsideCard = ({ title, text, image, buttonTitle }) => {
     </Card>
   );
 };
-export default AsideCard;
+export default DonateCard;

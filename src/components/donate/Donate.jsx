@@ -3,16 +3,16 @@ import React from 'react';
 import './donate.css';
 import { Container,Button,Nav } from 'react-bootstrap';
 import {donateData} from '../../data/data'
-import { AsideCard } from '../../cards';
+import {  DonateCard } from '../../cards';
 
 const Donate = () => {
     console.log(donateData)
   return (
-    <Container className="fluid display-5-sm">
+    <Container className="donateContainer fluid display-5-sm">
         {
             donateData.map((data) => (
              
-                <AsideCard.default
+                <DonateCard.default
                 title={data.title}
                 text={data.text}
                 image={data.image}

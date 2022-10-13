@@ -1,13 +1,16 @@
-.asideFloat img{
-    width: 100%;
-    height: 200px;
-}
+
 .card{
     width: 100%;
     margin: 1rem;
 }
 
-
+/* .asideImage{
+    width: 80%;
+} */
+.asideImage img{
+    width: 100%;
+    height: 500px;
+}
 @media only screen and (max-width: 400px) {
     .asideImage img{
         width: 100%;
