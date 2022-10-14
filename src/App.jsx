@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import { Routes,Route } from 'react-router-dom'
-import {  About, Contact, Donate, Footer, Home, Navigation} from './components/index'
+import {  About, Contact, Donate, Footer, Home, Navigation, Violence} from './components/index'
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
           <Route  path='/about' element={<About.default/>}/>
           <Route  path='/contact' element={<Contact.default/>}/>
           <Route  path='/donate' element={<Donate.default/>}/>
+          <Route  path='/violence' element={<Violence.default/>}/>
 
         </Routes>
         <Footer.default/>
