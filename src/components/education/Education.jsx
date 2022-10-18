@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from "react";
 import { Container, Button, Nav } from "react-bootstrap";
+import { Link } from 'react-router-dom';
+import "./education.css"
 import { AsideCard, CarouselCard } from "../../cards";
 import { Image1, Image2, Image3, war2 } from "../../assets/index";
 
@@ -17,26 +19,22 @@ const Education = () => {
         <section className="section">
           <div className="subsection">
             <p className="paragraph">
-              Welcome to Better World Community And Advocacy Organization
-              (BEWOCA) official website.Here we belief that a little effort can
-              make alot of difference in the life of an individual.We are A
-              young NGO based in Bamenda, a city in the English Speaking part of
-              Cameroon.
+            Here at BEWOCA, we believe that it is the skills that pay the bills.And so we our goal is to empower the youth,the single mother and the wife so as to ensure stability in the society since poverty is alliviated.We have carried out a couple of projects so far in the light of empowering the youths with skills for self employment. Here are some of the projects.
             </p>
-            <Button className="font-weight-bold bg-dark">
-              {" "}
-              <Nav.Item>
-                <Nav.Link href="/about">Learn More</Nav.Link>
+            <Button className="font-weight-bold bg-dark"> <Nav.Item>
+                <Link className="link" to="/partnerships">Learn More</Link>
               </Nav.Item>
-            </Button>
+              </Button>
           </div>
           <aside className="aside">
+            <div className="educationBlog">
             <CarouselCard.default
               title2="Cross-section of some Products."
               image={Image3}
               image1={Image1}
               image2={Image2}
             />
+            </div>
             <AsideCard.default
               title="Empower a woman, save a family"
               text="Sponsor an Internally displaced person to learn a trade or

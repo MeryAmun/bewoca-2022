@@ -1,4 +1,5 @@
 import { Nav, Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import './donateCard.css'
 const DonateCard = ({ title, text, image, buttonTitle }) => {
   return (
@@ -14,7 +15,7 @@ const DonateCard = ({ title, text, image, buttonTitle }) => {
         <Button className="font-weight-bold bg-dark text-primary">
           {" "}
           <Nav.Item>
-            <Nav.Link href="/donate">{buttonTitle}</Nav.Link>
+            <Link href="/donate" className="link">{buttonTitle}</Link>
           </Nav.Item>
         </Button>
       </Card.Body>

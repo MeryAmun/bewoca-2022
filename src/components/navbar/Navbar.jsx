@@ -27,7 +27,7 @@ import { logo } from '../../assets';
           </Link>
         </Navbar.Brand>
         <Navbar.Brand className="text-info">
-          <Link to="/contact">
+          <Link to="/contact" className="link">
             <i className="ico fa fa-globe fa-2x" aria-hidden="true"></i>
           </Link>
         </Navbar.Brand>
@@ -35,28 +35,28 @@ import { logo } from '../../assets';
       <Nav className="nav justify-content-start  font-weight-bold bg-dark fixed">
         <span className="close text-white d-lg-none" aria-hidden="false">&times;</span>
         <Nav.Item className="item">
-          <Nav.Link href="/">HOME</Nav.Link>
+          <Link to="/" className="link">HOME</Link>
         </Nav.Item>
         <Nav.Item className="item">
-          <Nav.Link href="/about">ABOUT US</Nav.Link>
+          <Link to="/about" className="link">ABOUT US</Link>
         </Nav.Item>
-        <NavDropdown className="" title="WHAT WE DO" id="nav-dropdown">
+        <NavDropdown className="drop" title="WHAT WE DO" id="nav-dropdown">
           <NavDropdown.Item href="/emergency">EMERGENCIES</NavDropdown.Item>
           <NavDropdown.Item href="education">EDUCATION, SKILLS BUILDING AND WORK</NavDropdown.Item>
           <NavDropdown.Item href="/violence">GENDER BASED VIOLENCE</NavDropdown.Item>
           <NavDropdown.Item href="/rights">SEXUAL HEALTH AND RIGHTS</NavDropdown.Item>
         </NavDropdown>
         <Nav.Item className="">
-          <Nav.Link href="/donate">DONATE</Nav.Link>
+          <Link to="/donate" className="link">DONATE</Link>
         </Nav.Item>
         <Nav.Item className="">
-          <Nav.Link href="/partnerships">PATNERSHIPS</Nav.Link>
+          <Link to="/partnerships" className="link">PATNERSHIPS</Link>
         </Nav.Item>
         <Nav.Item className="">
-          <Nav.Link href="/contact">CONTACT US</Nav.Link>
+          <Link to="/contact" className="link">CONTACT US</Link>
         </Nav.Item>
         <Nav.Item className="item">
-          <Nav.Link href="/blogpage">BLOG</Nav.Link>
+          <Link to="/blogpage" className="link">BLOG</Link>
         </Nav.Item>
         <Nav.Item className="">
           <Form inline className="search w-100">

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
 import './footer.css';
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -10,29 +10,29 @@ const Footer = () => {
           <div className="links-container">
           <div className='icons justify-content-start d-flex flex-row'>
            <span>
-           <Nav.Link target="_blank"  href="https://web.facebook.com/Better-World-Community-And-Advocacy-Organisation-166805994242255"> <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></Nav.Link>
+           <Link target="_blank"  className="link" to="https://web.facebook.com/Better-World-Community-And-Advocacy-Organisation-166805994242255"> <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></Link>
           
            </span>
            <span>
-           <Nav.Link  target="_blank"  href="https://www.instagram.com/betterworldcommunityand_advoca/">
+           <Link  target="_blank" className="link"  to="https://www.instagram.com/betterworldcommunityand_advoca/">
            <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
-           </Nav.Link>
+           </Link>
            </span>
            <span>
-          <Nav.Link target="_blank" href="#">
+          <Link target="_blank" className="link" to="#">
           <i className="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-          </Nav.Link>
+          </Link>
            </span>
            
           </div>
-          <div className='text-primary'>
-          <Nav.Link href="/blogpage">Blog</Nav.Link>
-            <Nav.Link href="/contact">Contact Us</Nav.Link>
-            <Nav.Link href="/partnerships">Partnerships</Nav.Link>
-            <Nav.Link href="/donate">Donations</Nav.Link>
-            <Nav.Link href="/skills">Empower</Nav.Link>
-            <Nav.Link href="/staff">Team</Nav.Link>
-            <Nav.Link href="/rights">Violence</Nav.Link>
+          <div className='d-flex flex-column text-primary'>
+          <Link to="/blogpage" className="link">Blog</Link>
+            <Link to="/contact" className="link">Contact Us</Link>
+            <Link to="/partnerships" className="link">Partnerships</Link>
+            <Link to="/donate" className="link">Donations</Link>
+            <Link to="/skills" className="link">Empower</Link>
+            <Link to="/staff" className="link">Team</Link>
+            <Link to="/rights" className="link">Violence</Link>
             </div>
           </div>
     <div className="tex text-primary">Copy Right &copy; BEWOCA  {date}</div>

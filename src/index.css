@@ -100,3 +100,8 @@ font-size: var(--font-base);
 font-weight: var(--almost-regular);
 line-height: 20px;
 }
+
+.link{
+  text-decoration: none;
+  margin: .5rem;
+}

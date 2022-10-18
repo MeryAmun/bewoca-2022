@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from "react";
 import { Container, Button, Nav} from "react-bootstrap";
+import { Link } from 'react-router-dom'
 import { AsideCard, CarouselCard } from "../../cards";
 import { Image1, Image2, Image3, war2} from "../../assets/index";
 import "./home.css";
@@ -32,7 +33,7 @@ const Home = () => {
                 <Button className="font-weight-bold bg-dark">
                   {" "}
                   <Nav.Item>
-                    <Nav.Link href="/about">Learn More</Nav.Link>
+                    <Link className="link" to="/about">Learn More</Link>
                   </Nav.Item>
                 </Button>
               </div>
