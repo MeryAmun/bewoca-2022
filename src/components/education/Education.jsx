@@ -19,7 +19,7 @@ const Education = () => {
         <section className="section">
           <div className="subsection">
             <p className="paragraph">
-            Here at BEWOCA, we believe that it is the skills that pay the bills.And so we our goal is to empower the youth,the single mother and the wife so as to ensure stability in the society since poverty is alliviated.We have carried out a couple of projects so far in the light of empowering the youths with skills for self employment. Here are some of the projects.
+            Here at BEWOCA, we believe that it is the skills that pay the bills, so one of out top most priorities is to empower the youth,the single mother and the wife so as to ensure stability in the home and society since poverty is alliviated.We have carried out a couple of projects so far in the light of empowering the youths with skills for self employment. Here are some of the projects.
             </p>
             <Button className="font-weight-bold bg-dark"> <Nav.Item>
                 <Link className="link" to="/partnerships">Learn More</Link>
