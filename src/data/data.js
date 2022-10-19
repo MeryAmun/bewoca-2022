@@ -76,7 +76,7 @@ export const activitiesData ={
 
 export const headerImages = {
     homeHeaderImage:[
-
+Image3,new7,new16,new5
     ],
     aboutHeaderImage:[
         
