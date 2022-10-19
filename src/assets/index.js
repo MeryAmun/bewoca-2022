@@ -15,11 +15,12 @@ import about3 from './images/c2.jpg'
 import about4 from './images/c9.jpg' 
 import donate1 from './images/g5.jpg'
 import donate2 from './images/b2.jpg';
-import donate3 from './images/a1.jpg'
+import donate3 from './images/a1.jpg';
+import partner1 from './images/g1.jpg';
 
 
 
 
 export {
-    logo,Image1,Image2,Image3,Imagea2,Imagea4,Imagea5,Imagea6,Imagea1,war1,war2,about1, about2,about3,about4,donate1,donate2,donate3
+    logo,Image1,Image2,Image3,Imagea2,Imagea4,Imagea5,Imagea6,Imagea1,war1,war2,about1, about2,about3,about4,donate1,donate2,donate3,partner1
 }

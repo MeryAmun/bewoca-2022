@@ -1,27 +1,29 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react';
-import './donate.css';
+import './partnership.css';
+import { Link } from 'react-router-dom';
 import { Container,Button,Nav } from 'react-bootstrap';
-import {donateData} from '../../data/data'
+import {partnershipsData} from '../../data/data'
 import {  DonateCard } from '../../cards';
 
 const Partnerships = () => {
-    console.log(donateData)
+    console.log(partnershipsData)
   return (
     <Container className="donateContainer fluid display-5-sm">
         {
-            donateData.map((data) => (
+            partnershipsData.map((data) => (
              
                 <DonateCard.default
                 title={data.title}
                 text={data.text}
                 image={data.image}
+                date={data.date}
                 />
             ))
         }
         <div className="buttonContainer">
         <Button className="font-weight-bold bg-dark"> <Nav.Item>
-            <Nav.Link href="/contact">To make a donation, Click here</Nav.Link>
+            <Link to="/contact" className='link'>To make a donation, Click here</Link>
           </Nav.Item>
           </Button>
         </div>
