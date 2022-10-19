@@ -17,7 +17,7 @@ export const partnershipsData = [
         title:"Partnerships", date:"19th November 2020", image: new35, text:"Over the weekend, we attended a workshop with stakeholders on curbing HIV stigmatization organized by Sustainable Women Organization-SWO on engaging and empowering adolescent girls and young women in  mitigating practices that promote stigma due to HIV and enhance sexual reproductive rights. Thanks for the opportunity to share and exchange ideas. Together we are making the world a Better Place for All."
     },
     {
-        title:"Partnerships", date:"13th November 2020", image:new39, text:"Yesterday at Think Big organization with other NGOs and civil society leader's in the North West. 'The incubator'  Great things come out of this. We Movee💪."
+        title:"Partnerships", date:"13th November 2020", image:new39, text:"Yesterday at Think Big organization with other NGOs and civil society leader's in the North West. 'The incubator'  Great things come out of this. We Move💪."
     },
     {
         title:"Partnerships", date:"26th September 2020", image: about3, text:"Yesterday 25th September we joined other CSO's in the North West Region to commemorate world contraceptive day. It was a great time to learn and exchange ideas On family planing and the Rights of adolescents to their reproductive health. Many adolescents don't have the right knowledge of contraceptives and how to use them correctly. Others are considered bad children and are afraid to go for contraceptives for fear of being shunned by the people who sell them. When adolescents are educated about their sexuality, they turn to practice safe sex they by preventing unwanted pregnancies and STI's and in most cases abstain from sexual intercourse as they are aware of the consequences of premarital sex. We also got to interact with an meet amazing people. Thanks you Youth2Youth for this platform to come together and share ideas."
@@ -81,6 +81,9 @@ Image3,new7,new16,new5
     ],
     aboutHeaderImage:[
         new4,new10,new13,new6
+    ],
+    contactHeaderImage:[
+        new9,new14,new15,new8
     ],
 
 }

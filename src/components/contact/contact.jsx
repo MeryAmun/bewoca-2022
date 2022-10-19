@@ -1,17 +1,24 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from 'react'
 import './contact.css'
 import { Container,Nav } from 'react-bootstrap';
+import {  CarouselCard } from "../../cards";
+import { headerImages } from "../../data/data";
 
 const Contact = () => {
   return (
     <div className='contact'>
       <h3 className="contact-header title">
-        Contact
+      <CarouselCard.default
+        title2='Cross-section of some Products.'
+        images={headerImages.contactHeaderImage}
+        
+      />
       </h3>
       <Container className='contact-main'>
         <div className="smallParagragh">
           <p className='sentence'>
-          For all enquireries concerning child protection,youth activism , <br /> sponsorship, donations,jobs,press enquiries, etc, contact the following addresses.
+          For all enquiries concerning child protection,youth activism , <br /> sponsorship, donations,jobs,press enquiries, etc, contact the following addresses.
           <br />
           </p>
         </div>
