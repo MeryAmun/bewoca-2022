@@ -3,7 +3,7 @@ import React from "react";
 import { Container, Button, Nav} from "react-bootstrap";
 import { Link } from 'react-router-dom'
 import { AsideCard, CarouselCard } from "../../cards";
-import { Image1, Image2, Image3, war2} from "../../assets/index";
+import { war2} from "../../assets/index";
 import { headerImages } from "../../data/data";
 
 import "./home.css";

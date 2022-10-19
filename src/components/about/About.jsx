@@ -1,22 +1,23 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from "react";
 import { AsideCard, CarouselCard } from "../../cards";
-import { about1, about2, about3, about4 } from "../../assets";
+import {  about4 } from "../../assets";
+import { headerImages } from "../../data/data";
 import "./about.css";
 import { Container } from "react-bootstrap";
 
 const About = () => {
   return (
     <div className="about">
-      <CarouselCard.default image={about1} image1={about2} image2={about3} />
+      <CarouselCard.default images={headerImages.aboutHeaderImage} />
 
       <Container className="main-container">
         <section className="section">
           <div className="subsection">
             <p className="paragraph">
               Better World Community and Advocacy Organization is a community
-              based organization that has been existing with official documents
-              since 2020, but whose activties date way back before this date.The
+              based organization that came into existence officially 
+              since 2019, but whose activties date way back before this date.The
               goals are many, but to name a few, we are out to identify and
               prevent all forms of abuse on men, women and children;
               irrespective of who they are. We are committed to make sure that
