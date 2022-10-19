@@ -1,7 +1,8 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import './violence.css'
-import { AsideCard, CarouselCard } from "../../cards";
+import { AsideCard, CarouselCard, DonateCard } from "../../cards";
+import { activitiesData } from "../../data/data";
 import { about1, about2, about3, about4 } from "../../assets";
 import { Container } from "react-bootstrap";
 
@@ -28,6 +29,18 @@ import { Container } from "react-bootstrap";
         </aside>
       </section>
     </Container>
+    <div className="activitiesContainer">
+          {
+            activitiesData.violence.map((activity) => (
+              <DonateCard.default
+              title={activity.title}
+              text={activity.text}
+              image={activity.image}
+              date={activity.date}
+              />
+            ))
+          }
+        </div>
   </div>
   )
 }

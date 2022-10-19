@@ -1,8 +1,17 @@
-import { donate1,donate2,donate3,partner1 } from "../assets/index"
+import { activities1, activities2, donate1,donate2,donate3,partner1 } from "../assets/index"
 
 
 
 export const partnershipsData = [
+    {
+        title:"Partnerships", date:"20th June 2021", image: donate1, text:"In a bit to celebrate her 3rd anniversary, better Better World Community And Advocacy Organisation in partnership with Rescue Team International and NJOAWANESS CIG carried out a one day workshop and Sanitary pad to 20 displaced women and girls on Menstrual Hygiene, Health and Sanitation. Under the theme ACT NOW! It was fun to see these women and girls come together to learn , interact and exchange ideas. The girls where taught how to make the  menstrual bracelet. We say thank you to our sponsor's and the girl's for making this workshop a success and for celebrating with us. Join us as we make the world a better place for all."
+    },
+    {
+        title:"Partnerships", date:"24th December 2020", image: donate1, text:"We thank and appreciate Equality justice and Peace initiative for partnering with us to spread love and hope this Christmas. We are greatful for the opportunity to put a smile on the face of one IDP this season.  Season greetings from BEWOCA, Let's spread love and Peace. Together we will make the world a better place for all.."
+    },
+    {
+        title:"Partnerships", date:"20th December 2020", image: donate1, text:"solidarity orphanage received their Christmas gifts. Displaced from Bawock this was an answer to prayer indeed. We thank all those who contributed to make this a reality. The kids will have beds to sleep on and food to eat when they return from from school all thanks to you. Thank you for standing with us to make the world a Better Place for All 🙏 May God richly bless you."
+    },
     {
         title:"Partnerships", date:"", image: donate1, text:"BEWOCA, though barely a years old has worked in collaborration with a couple of other NGOs when it means taking action.It doesn't matter how small our contribution may be,we are open to cooperate as long as one life will be improved.Likewise we accept cooperation from other NGOs."
     },
@@ -16,14 +25,40 @@ export const partnershipsData = [
 ]
 export const donateData = [
     {
-        title:"Partnerships", date:"", image: donate1, text:"Some of the hidden but very serious problems faced by women and girls displaced by war is access to sanitary materials.On this day in commemoration of the World Menstral Hygiene Day,BEWOCA shared some sanitary pads to some disabled women in Bamenda.Some men also came to collect for their wives and daughters. You can join to help women get supplies of sanitary paths. You can donnate drugs and other medical supplies which could be given to internally displaced persons in the bushes for first aid treatment."
+        title:"Donate", date:"", image: donate1, text:"Some of the hidden but very serious problems faced by women and girls displaced by war is access to sanitary materials.On this day in commemoration of the World Menstral Hygiene Day,BEWOCA shared some sanitary pads to some disabled women in Bamenda.Some men also came to collect for their wives and daughters. You can join to help women get supplies of sanitary paths. You can donnate drugs and other medical supplies which could be given to internally displaced persons in the bushes for first aid treatment."
     },
     {
-        title:"Partnerships", date:"", image:donate2, text:"You can sponsor and internally displaced person through learn a trade...tailoring,hairdressing,shaving,Carpentary sandals making depending on your willingness.We believe that a little is alot.Most of these internally displaced persons need to learn a trade in other to be able to catch up in life since they have either abandonned school or their occupations "
+        title:"Donate", date:"", image:donate2, text:"You can sponsor and internally displaced person through learn a trade...tailoring,hairdressing,shaving,Carpentary sandals making depending on your willingness.We believe that a little is alot.Most of these internally displaced persons need to learn a trade in other to be able to catch up in life since they have either abandonned school or their occupations "
     },
     {
-        title:"Partnerships", date:"", image:donate3, text:"Remember that these people have left behind the debris of their one time homes,you can offer accomodation or pay rents for an internally displaced person.Any act of kindness can never be too small.These children need clothes,toys,food,etc.Women and children are the ones who bare the greatest brunts of war.A bloody civil war is raging in the Cameroons,the humanitarian crisis is overwhelming.Women and children have been targets in the recent weeks."
+        title:"Donate", date:"", image:donate3, text:"Remember that these people have left behind the debris of their one time homes,you can offer accomodation or pay rents for an internally displaced person.Any act of kindness can never be too small.These children need clothes,toys,food,etc.Women and children are the ones who bare the greatest brunts of war.A bloody civil war is raging in the Cameroons,the humanitarian crisis is overwhelming.Women and children have been targets in the recent weeks."
     },
     
 ]
+
+export const activitiesData ={
+    education:[ {
+        title:"Menstral Hygien Workshop and Sanitary Pad Distribution", date:"20th July 2021", image:donate2, text:"In a bit to celebrate her 3rd anniversary, better Better World Community And Advocacy Organisation in partnership with Rescue Team International and NJOAWANESS CIG carried out a one day workshop and Sanitary pad to 20 displaced women and girls on Menstrual Hygiene, Health and Sanitation. Under the theme ACT NOW! It was fun to see these women and girls come together to learn , interact and exchange ideas. The girls where taught how to make the  menstrual bracelet. We say thank you to our sponsor's and the girl's for making this workshop a success and for celebrating with us. Join us as we make the world a better place for all."
+    },
+    {
+        title:"Training Workshop on Bags and Sandals production", date:"24th November to 8th December 2020", image:donate2, text:"Our first fruits of  our empowerment workshop 2021😍. You can't give someone fish forever, but you can teach them how to catch fish.  we are greatful for your dedication, commitment and support. Our prayer is that you impact life's with the skills you have learned.  Together let's make the world a better place for all"
+    },
+    
+    {
+        title:"Training Workshop on Bags and Sandals production", date:"24th November to 8th December 2020", image:donate2, text:"You can sponsor and internally displaced person through learn a trade...tailoring,hairdressing,shaving,Carpentary sandals making depending on your willingness.We believe that a little is alot.Most of these internally displaced persons need to learn a trade in other to be able to catch up in life since they have either abandonned school or their occupations "
+    },
+    {
+        title:"Celebrating Menstral Hygien Day", date:"28th May 2020", image: activities1, text:"Some of the hidden but very serious problems faced by women and girls displaced by war is access to sanitary materials.On this day in commemoration of the World Menstral Hygiene Day,BEWOCA shared some sanitary pads to some disabled women in Bamenda.Some men also came to collect for their wives and daughters. You can join to help women get supplies of sanitary paths. You can donnate drugs and other medical supplies which could be given to internally displaced persons in the bushes for first aid treatment."
+    },
+    
+    {
+        title:"Training on Mushroom Cultivation", date:"18th to 23rd June 2019", image:activities2, text:"Remember that these people have left behind the debris of their one time homes,you can offer accomodation or pay rents for an internally displaced person.Any act of kindness can never be too small.These children need clothes,toys,food,etc.Women and children are the ones who bare the greatest brunts of war.A bloody civil war is raging in the Cameroons,the humanitarian crisis is overwhelming.Women and children have been targets in the recent weeks."
+    },
+    ],
+    violence:[
+        {
+            title:"Training on Mushroom Cultivation", date:"11th December 2020", image:activities2, text:"Today marks the end of 16days of activism on Gender Based Violence, under the theme 'Orange the world, Fund, Respond, Prevent, collect'. This isn't the end for us, but a reminder that there is much work to be done. Today while beading, We had and interesting session with the girls. Educating them on gbv and the danger's, prevention, protection, and how conflicts can be resolved. Together we will ORANGE the world and make it a better place for al"
+        },
+    ]
+}
 

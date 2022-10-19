@@ -3,8 +3,9 @@ import React from "react";
 import { Container, Button, Nav } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import "./education.css"
-import { AsideCard, CarouselCard } from "../../cards";
+import { AsideCard, CarouselCard, DonateCard } from "../../cards";
 import { Image1, Image2, Image3, war2 } from "../../assets/index";
+import { activitiesData } from "../../data/data";
 
 const Education = () => {
   return (
@@ -27,14 +28,6 @@ const Education = () => {
               </Button>
           </div>
           <aside className="aside">
-            <div className="educationBlog">
-            <CarouselCard.default
-              title2="Cross-section of some Products."
-              image={Image3}
-              image1={Image1}
-              image2={Image2}
-            />
-            </div>
             <AsideCard.default
               title="Empower a woman, save a family"
               text="Sponsor an Internally displaced person to learn a trade or
@@ -45,6 +38,18 @@ const Education = () => {
             />
           </aside>
         </section>
+        <div className="activitiesContainer">
+          {
+            activitiesData.education.map((activity) => (
+              <DonateCard.default
+              title={activity.title}
+              text={activity.text}
+              image={activity.image}
+              date={activity.date}
+              />
+            ))
+          }
+        </div>
       </Container>
     </div>
   );

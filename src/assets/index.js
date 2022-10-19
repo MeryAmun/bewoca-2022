@@ -17,10 +17,12 @@ import donate1 from './images/g5.jpg'
 import donate2 from './images/b2.jpg';
 import donate3 from './images/a1.jpg';
 import partner1 from './images/g1.jpg';
+import activities1 from './images/c1.jpg'
+import  activities2 from './images/b3.jpg'
 
 
 
 
 export {
-    logo,Image1,Image2,Image3,Imagea2,Imagea4,Imagea5,Imagea6,Imagea1,war1,war2,about1, about2,about3,about4,donate1,donate2,donate3,partner1
+    logo,Image1,Image2,Image3,Imagea2,Imagea4,Imagea5,Imagea6,Imagea1,war1,war2,about1, about2,about3,about4,donate1,donate2,donate3,partner1, activities1,activities2
 }
