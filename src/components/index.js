@@ -7,3 +7,4 @@ export * as Donate from './donate/Donate'
 export * as Violence from './violence/Violence';
 export * as Education from './education/Education';
 export * as Partnerships from './partnerships/Patnerships';
+export * as Header from './header/Header'
