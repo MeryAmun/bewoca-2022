@@ -11,7 +11,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .carolImage{
+    .carouselCardImage{
         height: 200px;
     }
   }

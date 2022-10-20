@@ -9,7 +9,7 @@ import { headerImages } from "../../data/data";
 import "./home.css";
 
 // import { Image,Image1,Image2,Image3,Image4,Image5 } from '@mui/icons-material';
-console.log(headerImages.homeHeaderImage)
+
 const Home = () => {
   return (
     <div className="home">

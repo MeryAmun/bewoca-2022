@@ -7,8 +7,8 @@ const CarouselCard = ({images,image1,image2,image3,image4, title1,title2,title3,
     return (
         <Carousel className="fluid d-block w-100 carouselCard">
         {
-images.map((item) => (
-  <Carousel.Item>
+images.map((item, index) => (
+  <Carousel.Item key={index}>
           <Carousel.Caption>
             <h1 className=" title font-weight-normal">{title1}</h1>
           </Carousel.Caption>

@@ -24,6 +24,9 @@ font-weight: var( --medium-font);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgba(219, 215, 215);
+padding: 2rem;
+border-radius: 5px;
 }
 .title{
     font-size: 20px;
@@ -49,3 +52,13 @@ font-weight: var( --medium-font);
     justify-content: center;
     align-items: center;
 }
+
+
+@media screen and (max-width: 400px) {
+    .contact-header{
+       
+        margin-bottom: 3rem;
+    
+    }
+       
+    }

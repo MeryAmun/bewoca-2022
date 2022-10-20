@@ -3,13 +3,23 @@ import React from 'react';
 import './partnership.css';
 import { Link } from 'react-router-dom';
 import { Container,Button,Nav } from 'react-bootstrap';
-import {partnershipsData} from '../../data/data'
+import {partnershipsData, headerImages} from '../../data/data'
+import {  CarouselCard } from "../../cards";
 import {  DonateCard } from '../../cards';
 
 const Partnerships = () => {
-    console.log(partnershipsData)
+
   return (
-    <Container className="donateContainer fluid display-5-sm">
+
+   <div className="donateContainer">
+      <h3 className="contact-header title">
+      <CarouselCard.default
+        title2='Cross-section of some Products.'
+        images={headerImages.partnershipsHeaderImage}
+        
+      />
+      </h3>
+    <Container className=" fluid display-5-sm">
         {
             partnershipsData.map((data) => (
              
@@ -28,6 +38,7 @@ const Partnerships = () => {
           </Button>
         </div>
         </Container>
+   </div>
   )
 }
 

@@ -107,5 +107,31 @@ line-height: 20px;
 }
 
 .activitiesContainar{
-  
+
+}
+
+@media screen and (max-width: 400px) {
+  .main-container{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+     
+  }
+  .section{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid rgb(219, 215, 215);
+  flex: 1;
+
+  border-radius: 5px;
+  margin-left: 0;
+  }
 }
