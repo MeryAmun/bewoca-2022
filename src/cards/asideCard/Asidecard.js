@@ -17,7 +17,7 @@ const AsideCard = ({ title, text, image, buttonTitle }) => {
         <Button className="font-weight-bold bg-dark text-primary">
           {" "}
           <Nav.Item>
-            <Link href="/donate" className="link">{buttonTitle}</Link>
+            <Link to="/contact" className="link">{buttonTitle}</Link>
           </Nav.Item>
         </Button>
       </Card.Body>

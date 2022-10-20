@@ -2,14 +2,18 @@
 import React from 'react';
 import './violence.css'
 import { AsideCard, CarouselCard, DonateCard } from "../../cards";
-import { activitiesData } from "../../data/data";
-import { about1, about2, about3, about4 } from "../../assets";
+import { activitiesData, headerImages } from "../../data/data";
+import { about4, new17 } from "../../assets";
 import { Container } from "react-bootstrap";
 
  const Violence = () => {
   return (
     <div className="about">
-    <CarouselCard.default image={about1} image1={about2} image2={about3} />
+    <CarouselCard.default
+        title2="Cross-section of some Products."
+        images={headerImages.educationHeaderImage}
+       
+      />
 
     <Container className="main-container">
       <section className="section">
@@ -21,10 +25,10 @@ import { Container } from "react-bootstrap";
 
         <aside className="aside">
           <AsideCard.default
-            title="Rape and Gender Based Violence"
-            text="Gender Based Violence and rape are two monsters that are ever present in our communities.We are committed to fight these ugly beasts in every way,by providing th neccesary support to victims."
+            title="Empower a woman, save a family"
+            text="Sponsor an Internally displaced person to learn a trade or donate to our project aimed at training women and girls on how to make sandals and bags using beads."
             buttonTitle="Take Action"
-            image={about4}
+            image={new17}
           />
         </aside>
       </section>
