@@ -3,7 +3,7 @@ import React from 'react';
 import './violence.css'
 import { AsideCard, CarouselCard, DonateCard } from "../../cards";
 import { activitiesData, headerImages } from "../../data/data";
-import { about4, new17 } from "../../assets";
+import {  new17 } from "../../assets";
 import { Container } from "react-bootstrap";
 
  const Violence = () => {

@@ -1,5 +1,5 @@
-import { activities1, activities2, donate1,donate2,donate3,partner1,Image1,Image2,Image3,Imagea2,Imagea4,Imagea5,Imagea6,Imagea1,war1,war2,about1, about2,about3,about4, new1,new2,new3,new4,new5,new6,new7,new8,new9,new10,new12,new13,new14,new15,new16,new17,new18,new19,new20,new21,new22,new23,new24,new25,new26,new27,new28,new29,new30
-    ,new31,new32,new33,new34,new35,new36,new37,new38, new39, new41, new42, new43, } from "../assets/index"
+import {  activities2, donate1,donate2,donate3,partner1,Image1,Image2,Image3,about3,about4, new1,new2,new4,new5,new6,new7,new8,new9,new10,new13,new14,new15,new16,new18,new26,new28,new29
+    ,new31,new34,new35,new38, new39, new41,  new43, new45, } from "../assets/index"
 
 
 
@@ -56,9 +56,9 @@ export const activitiesData ={
     },
     
     
-    // {
-    //     title:"Celebrating Menstral Hygien Day", date:"28th May 2020", image: activities1, text:"Some of the hidden but very serious problems faced by women and girls displaced by war is access to sanitary materials.On this day in commemoration of the World Menstral Hygiene Day,BEWOCA shared some sanitary pads to some disabled women in Bamenda.Some men also came to collect for their wives and daughters. You can join to help women get supplies of sanitary paths. You can donnate drugs and other medical supplies which could be given to internally displaced persons in the bushes for first aid treatment."
-    // },
+    {
+        title:"Celebrating Menstral Hygien Day", date:"28th May 2020", image: new45, text:"Some of the hidden but very serious problems faced by women and girls displaced by war is access to sanitary materials.On this day in commemoration of the World Menstral Hygiene Day,BEWOCA shared some sanitary pads to some disabled women in Bamenda.Some men also came to collect for their wives and daughters. You can join to help women get supplies of sanitary paths. You can donnate drugs and other medical supplies which could be given to internally displaced persons in the bushes for first aid treatment."
+    },
     
     {
         title:"Training Workshop on Mushromm Cultivation", date:"18th to 23rd June 2019", image:activities2, text:"We had a workshop in which women and girls received training in mushrom cultivation.This is in line with our goal of equiping the woman and the girl child with economic skills to enable them support themselves and their homes"

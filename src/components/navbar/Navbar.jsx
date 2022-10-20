@@ -40,11 +40,12 @@ import { logo } from '../../assets';
         <Nav.Item className="item">
           <Link to="/about" className="link">ABOUT US</Link>
         </Nav.Item>
+        <Nav.Item>
         <NavDropdown className="drop" title="WHAT WE DO" id="nav-dropdown">
-          <NavDropdown.Item href="education">EDUCATION, SKILLS BUILDING AND WORK</NavDropdown.Item>
+          <NavDropdown.Item href="education">SEX EDUCATION AND ECONOMIC EMPOWERMENT</NavDropdown.Item>
           <NavDropdown.Item href="/violence">GENDER BASED VIOLENCE AND RAPE</NavDropdown.Item>
-          <NavDropdown.Item href="/rights">SEXUAL HEALTH AND RIGHTS</NavDropdown.Item>
         </NavDropdown>
+        </Nav.Item>
         <Nav.Item className="">
           <Link to="/donate" className="link">DONATE</Link>
         </Nav.Item>

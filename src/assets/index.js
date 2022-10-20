@@ -61,6 +61,7 @@ import   new41 from  './images/new41.jpg';
 import   new42 from  './images/new42.jpg'
 import   new43 from  './images/new43.jpg'
 import   new44 from  './images/new44.jpg'
+import   new45 from  './images/new45.jpg'
 
 
 
@@ -70,7 +71,7 @@ import   new44 from  './images/new44.jpg'
 
 export {
     logo,Image1,Image2,Image3,Imagea2,Imagea4,Imagea5,Imagea6,Imagea1,war1,war2,about1, about2,about3,about4,donate1,donate2,donate3,partner1, activities1,activities2, new1,new2,new3,new4,new5,new6,new7,new8,new9,new10,new12,new13,new14,new15,new16,new17,new18,new19,new20,new21,new22,new23,new24,new25,new26,new27,new28,new29,new30
-,new31,new32,new33,new34,new35,new36,new37,new38,new39,new41,new42,new43,new44
+,new31,new32,new33,new34,new35,new36,new37,new38,new39,new41,new42,new43,new44,new45
 }
 
 // export * as   logo from './images/logo.jpg';
