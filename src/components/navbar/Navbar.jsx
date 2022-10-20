@@ -41,9 +41,11 @@ import { logo } from '../../assets';
           <Link to="/about" className="link">ABOUT US</Link>
         </Nav.Item>
         <Nav.Item>
+        
+         
         <NavDropdown className="drop" title="WHAT WE DO" id="nav-dropdown">
-          <NavDropdown.Item href="education">SEX EDUCATION AND ECONOMIC EMPOWERMENT</NavDropdown.Item>
-          <NavDropdown.Item href="/violence">GENDER BASED VIOLENCE AND RAPE</NavDropdown.Item>
+          <NavDropdown.Item><Link to="education" className='link'>SEX EDUCATION AND ECONOMIC EMPOWERMENT</Link></NavDropdown.Item>
+          <NavDropdown.Item> <Link to="/violence" className='link'>GENDER BASED VIOLENCE AND RAPE</Link></NavDropdown.Item>
         </NavDropdown>
         </Nav.Item>
         <Nav.Item className="">
