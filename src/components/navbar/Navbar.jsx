@@ -13,12 +13,16 @@ import { logo } from '../../assets';
 console.log(close.current)
 console.log(navTag.current)
 
+
+const navEvents = () => {
+  navTag.current.style.display = 'block';
+ 
+}
 const closeSide = () => {
   navTag.current.style.display = 'none'
 }
   const showNav = () => {
-navTag.current.style.display = 'block';
-navTag.current.style.width = 'block'
+navEvents()
   }
 
   return (

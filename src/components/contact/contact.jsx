@@ -24,13 +24,13 @@ const Contact = () => {
         </div>
         <div className="officeAddress">
         <h3 className="title font-weight-bold text-secondary">OUR REGISTERED OFFICE</h3>
-          <p className='sentence'>Our registered office is located at <h4 className="title font-weight-bold text-secondary">Red field Nghomham Bamenda Cameroon</h4></p>
+          <div className='sentence'>Our registered office is located at <h4 className="title font-weight-bold text-secondary">Red field Nghomham Bamenda Cameroon</h4></div>
           <p className='sentence'>You can also contact us on phone through the following numbers</p>
           
           <h3 className="title font-weight-bold text-secondary"> <i className="fa fa-whatsapp" aria-hidden="true"></i>(+237) 674513391</h3>
           <h3 className="title font-weight-bold text-secondary"><i className="fa fa-whatsapp" aria-hidden="true"></i>(+237) 654292637 </h3>
-          <h3 className="title font-weight-bold text-secondary"><i class="fa fa-envelope" aria-hidden="true"></i>bewocaa.org@gmail.com</h3>
-          <h3 className="title font-weight-bold text-secondary"><i class="fa fa-envelope" aria-hidden="true"></i>bewoca2@gmail.com</h3>
+          <h3 className="title font-weight-bold text-secondary"><i className="fa fa-envelope" aria-hidden="true"></i>bewocaa.org@gmail.com</h3>
+          <h3 className="title font-weight-bold text-secondary"><i className="fa fa-envelope" aria-hidden="true"></i>bewoca2@gmail.com</h3>
         </div>
         <div className="social-media d-flex justify-content-evenly flex-row">
         <h4 className="tex text-secondary">Follow Us</h4>
