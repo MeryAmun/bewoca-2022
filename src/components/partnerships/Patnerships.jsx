@@ -21,10 +21,16 @@ const Partnerships = () => {
       </h3>
     <Container className=" fluid display-5-sm">
         {
+<<<<<<< HEAD
             partnershipsData.map((data,index) => (
              
                 <DonateCard.default
                 key={index}
+=======
+            partnershipsData.map((data) => (
+             
+                <DonateCard.default
+>>>>>>> 92a2040ef85dda8f52cfff477632e898b536a7d2
                 title={data.title}
                 text={data.text}
                 image={data.image}

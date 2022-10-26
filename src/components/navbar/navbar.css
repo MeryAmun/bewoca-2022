@@ -40,6 +40,10 @@
   
    .nav {
     height: 40%;
+<<<<<<< HEAD
+=======
+    /* background: black; */
+>>>>>>> 92a2040ef85dda8f52cfff477632e898b536a7d2
     display: none;
     opacity: 0.8;
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
@@ -51,7 +55,11 @@
   max-width: 400px;
   z-index: 200;
   transform: translateX(-100);
+<<<<<<< HEAD
   transition: transform 4s ease-in;
+=======
+  transition: transform 2s linear;
+>>>>>>> 92a2040ef85dda8f52cfff477632e898b536a7d2
   
   }
   }
