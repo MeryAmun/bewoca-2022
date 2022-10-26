@@ -1,5 +1,5 @@
 import {  activities2, donate1,donate2,donate3,partner1,Image1,Image2,Image3,about3,about4, new1,new2,new4,new5,new6,new7,new8,new9,new10,new13,new14,new15,new16,new18,new26,new28,new29
-    ,new31,new34,new35,new38, new39, new41,  new43, new45, } from "../assets/index"
+    ,new31,new34,new35,new38, new39, new41,  new43, new45, new46, } from "../assets/index"
 
 
 
@@ -17,7 +17,7 @@ export const partnershipsData = [
         title:"Partnerships", date:"19th November 2020", image: new35, text:"Over the weekend, we attended a workshop with stakeholders on curbing HIV stigmatization organized by Sustainable Women Organization-SWO on engaging and empowering adolescent girls and young women in  mitigating practices that promote stigma due to HIV and enhance sexual reproductive rights. Thanks for the opportunity to share and exchange ideas. Together we are making the world a Better Place for All."
     },
     {
-        title:"Partnerships", date:"13th November 2020", image:new39, text:"Yesterday at Think Big organization with other NGOs and civil society leader's in the North West. 'The incubator'  Great things come out of this. We Move💪."
+        title:"Partnerships", date:"13th November 2020", image:new39, text:"Yesterday at Think Big organization with other NGOs and civil society leader's in the North West. 'The incubator'  Great things come out of  We Move💪."
     },
     {
         title:"Partnerships", date:"26th September 2020", image: about3, text:"Yesterday 25th September we joined other CSO's in the North West Region to commemorate world contraceptive day. It was a great time to learn and exchange ideas On family planing and the Rights of adolescents to their reproductive health. Many adolescents don't have the right knowledge of contraceptives and how to use them correctly. Others are considered bad children and are afraid to go for contraceptives for fear of being shunned by the people who sell them. When adolescents are educated about their sexuality, they turn to practice safe sex they by preventing unwanted pregnancies and STI's and in most cases abstain from sexual intercourse as they are aware of the consequences of premarital sex. We also got to interact with an meet amazing people. Thanks you Youth2Youth for this platform to come together and share ideas."
@@ -66,7 +66,7 @@ export const activitiesData ={
     ],
     violence:[
         {
-            title:"Violence", date:"11th December 2020", image:new34, text:"Today marks the end of 16days of activism on Gender Based Violence, under the theme 'Orange the world, Fund, Respond, Prevent, collect'. This isn't the end for us, but a reminder that there is much work to be done. Today while beading, We had and interesting session with the girls. Educating them on gbv and the danger's, prevention, protection, and how conflicts can be resolved. Together we will ORANGE the world and make it a better place for al"
+            title:"Violence", date:"11th December 2020", image:new34, text:"Today marks the end of 16days of activism on Gender Based Violence, under the theme 'Orange the world, Fund, Respond, Prevent, collect'. This isn't the end for us, but a reminder that there is much work to be done. Today while beading, We had and interesting session with the girls. Educating them on gbv and the danger's, prevention, protection, and how conflicts can be resolved. Together we will ORANGE the world and make it a better place for all."
         },
         {
             title:"Violence", date:"7th October 2020", image:new38, text:"Rape is having sex with someone without their consent, final full stop. Whether the person is your spouse or a prostitute does not annul the need for them to consent. That a lady cuddles with you,and allows you to caress her body doesn't mean you must have sex with her.Therefore if after all the cuddling, caressing and kissing she says she's not going any further, she is well within her rights. Everyone has the right to physical integrity (body) and moral integrity (image),  and there is no justification for a violation of any such rights.  People get raped by rapists,if there are no rapist there won't be rape. Priest rape children, father's rape their daughters, brothers, rape sisters, cousins, uncles and the list goes on.. According to rainn.org, an online platform giving statistics on victims of sexual violence, EIGHT OUT OF EVERY TEN RAPE VICTIMS KNEW THE RAPIST. So when the rape topic comes up and we begin by talking about how women dress, or the fact that they go out on dates with men,  its a very naive perspective. Naive because rape is not like tripping on a stone and falling... It is often premeditated, calculated and planned. If indecent dressing was the cause of rape, women would have been raped in broad day light, in public places... Children aged one have been raped, so how do you justify the act? Where they dressed indecently, the answer is no. Yes we encourage decent dressing but that shouldn't be use as a justifiable reason for Rape. Rape is perpetrated by sick people who have been misinformed about what sex is,and who have no respect for a woman's body."
@@ -77,6 +77,21 @@ export const activitiesData ={
     ]
 }
 
+
+export const staff = [
+    {
+       name:"Ngoin Nsama E. Chebisi", position:"Founder", image:new46, details:` is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa `
+    },
+    {
+        name:"Perpetua Akwi", position:"Founder", image:new46, details:` is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa `
+     },
+     {
+        name:"Fotang Caroline", position:"Founder", image:new46, details:` is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa `
+     },
+     
+     
+     
+]
 
 
 export const headerImages = {

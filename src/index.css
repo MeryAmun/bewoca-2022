@@ -35,16 +35,14 @@
   
   body{
     height: 100%;
+    
   
   }
 
 
-  /* .App{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  } */
+  .App{
+    padding: .5rem;
+  }
 
 .main-container{
   margin-top: 20rem;
@@ -95,7 +93,7 @@ margin-left: 2rem;
 }
 
 .asideText{
-  font-size: 22px;
+  font-size: 25px;
 font-size: var(--font-base);
 font-weight: var(--almost-regular);
 line-height: 20px;
@@ -133,5 +131,12 @@ line-height: 20px;
 
   border-radius: 5px;
   margin-left: 0;
+  }
+
+  .asideText{
+    font-size: 25px;
+  font-size: var(--font-base);
+  font-weight: var(--almost-regular);
+  line-height: 20px;
   }
 }

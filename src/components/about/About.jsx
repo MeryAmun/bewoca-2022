@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from "react";
-import { AsideCard, CarouselCard } from "../../cards";
+import { AsideCard, CarouselCard, StaffCard } from "../../cards";
 import {  about4 } from "../../assets";
-import { headerImages } from "../../data/data";
+import { headerImages, staff } from "../../data/data";
 import "./about.css";
 import { Container } from "react-bootstrap";
 
@@ -48,6 +48,34 @@ const About = () => {
             />
           </aside>
         </section>
+      </Container>
+      <div className="ceo">
+          <div className="ceoContainer">
+          {
+              <StaffCard.default
+              key={staff[0]}
+             name={staff[0].name}
+              position={staff[0].position}
+              image={staff[0].image}
+             details={staff[0].details}
+              />
+          }
+          </div>
+        </div>
+      <Container>
+      <div className="activitiesContainer">
+          {
+          staff.slice(1-3).map((person,index) => (
+              <StaffCard.default
+              key={index}
+             name={person.name}
+              position={person.position}
+              image={person.image}
+             details={person.details}
+              />
+            ))
+          }
+        </div>
       </Container>
     </div>
   );

@@ -30,9 +30,7 @@ const Footer = () => {
             <Link to="/contact" className="link">Contact Us</Link>
             <Link to="/partnerships" className="link">Partnerships</Link>
             <Link to="/donate" className="link">Donations</Link>
-            <Link to="/skills" className="link">Empower</Link>
             <Link to="/staff" className="link">Team</Link>
-            <Link to="/rights" className="link">Violence</Link>
             </div>
           </div>
     <div className="tex text-primary">Copy Right &copy; BEWOCA  {date}</div>
