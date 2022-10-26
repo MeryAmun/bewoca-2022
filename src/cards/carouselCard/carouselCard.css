@@ -1,0 +1,17 @@
+.carouselCard{
+    height: 200px;
+    width: 100%;
+}
+.carouselCardImage{
+    height: 70vh;
+}
+
+.carouselCardImage img{
+    height: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+    .carouselCardImage{
+        height: 200px;
+    }
+  }

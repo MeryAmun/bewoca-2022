@@ -1,0 +1,57 @@
+.nav{
+    padding: 10px 12px;
+}
+.logo__container img{
+    width: 60%;
+    height: 40%;
+}
+
+
+.drop{
+  margin-bottom: 1rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+/* .nav{
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    
+  } */
+ 
+
+
+ @media screen and (max-width: 400px) {
+  /*Nav button and close icon*/
+  .ico{
+    display: none;
+  }
+  .bar{
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .close{
+    font-size: 1.5rem;
+    
+  } 
+  
+   .nav {
+    height: 40%;
+    display: none;
+    opacity: 0.8;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  padding-top: 0;
+  top: 10%;
+  left: 0;
+  width: 45%;
+  max-width: 400px;
+  z-index: 200;
+  transform: translateX(-100);
+  transition: transform 4s ease-in;
+  
+  }
+  }

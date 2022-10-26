@@ -1,0 +1,27 @@
+{
+   "homeCarousel": [
+        {
+            "title": "Welcome to Better World Community And Advocacy Organization",
+            "image":[ 
+                "../assets/images/d1.jpg",
+                "../assets/images/d2.jpg",
+                "../assets/images/d3.jpg"
+             ]
+    }
+    ],
+    "aboutCarousel": [
+        {
+            "title": ">WE BUILD, REPAIR, AND INSPIRE HOPE",
+            "image":[ 
+                "../assets/images/d1.jpg",
+                "../assets/images/d2.jpg",
+                "../assets/images/d3.jpg"
+             ]
+    }
+    ]
+
+
+
+}
+
+
