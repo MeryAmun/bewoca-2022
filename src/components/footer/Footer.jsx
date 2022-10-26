@@ -10,7 +10,8 @@ const Footer = () => {
           <div className="links-container">
           <div className='icons justify-content-start d-flex flex-row'>
            <span>
-           <Link target="_blank"  className="link" to="https://web.facebook.com/Better-World-Community-And-Advocacy-Organisation-166805994242255"> <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></Link>
+           <Link target="_blank"  className="link" to="https://web.facebook.com/Better-World-Community-And-Advocacy-Organisation-166805994242255"> 
+           <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></Link>
           
            </span>
            <span>
@@ -30,7 +31,6 @@ const Footer = () => {
             <Link to="/contact" className="link">Contact Us</Link>
             <Link to="/partnerships" className="link">Partnerships</Link>
             <Link to="/donate" className="link">Donations</Link>
-            <Link to="/staff" className="link">Team</Link>
             </div>
           </div>
     <div className="tex text-primary">Copy Right &copy; BEWOCA  {date}</div>

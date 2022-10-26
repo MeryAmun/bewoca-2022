@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef} from 'react';
 import { Link } from 'react-router-dom'
 import { Nav, Navbar, NavDropdown, Form, FormControl } from  'react-bootstrap';
 import './navbar.css'
@@ -8,10 +8,22 @@ import { logo } from '../../assets';
 
   
  const  Navigation = ()  => {
+  const close = useRef();
+  const navTag = useRef()
+console.log(close.current)
+console.log(navTag.current)
+
+const closeSide = () => {
+  navTag.current.style.display = 'none'
+}
+  const showNav = () => {
+navTag.current.style.display = 'block';
+navTag.current.style.width = 'block'
+  }
 
   return (
     <div>
-      <Navbar className="nav d-flex justify-content-between">
+      <Navbar className="d-flex justify-content-between">
         <Navbar.Brand className="" href="/">
           <div className="logo__container">
           <img
@@ -23,7 +35,7 @@ import { logo } from '../../assets';
         </Navbar.Brand>
         <Navbar.Brand className="text-info">
           <Link to="#" className="bg-transparent d-lg-none">
-            <i className="bar fa fa-bars" aria-hidden="true"></i>
+            <i className="bar fa fa-bars" aria-hidden="true" onClick={showNav}></i>
           </Link>
         </Navbar.Brand>
         <Navbar.Brand className="text-info">
@@ -32,8 +44,8 @@ import { logo } from '../../assets';
           </Link>
         </Navbar.Brand>
       </Navbar>
-      <Nav className="nav justify-content-start  font-weight-bold bg-dark fixed">
-        <span className="close text-white d-lg-none" aria-hidden="false">&times;</span>
+      <Nav className="nav justify-content-start  font-weight-bold bg-dark fixed" ref={navTag}>
+        <span className="close text-white d-lg-none" aria-hidden="false" ref={close} onClick={closeSide}>&times;</span>
         <Nav.Item className="item">
           <Link to="/" className="link">HOME</Link>
         </Nav.Item>
