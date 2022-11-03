@@ -8,13 +8,15 @@
 }
 
 .staffImage{
-    
+    margin-top: .5rem;
+    justify-content: center;
    
 }
 .staffImage img{
    width:100% ;
-    height: 200px;
+    height: 160px;
     border-radius: 50%;
+    
 }
 @media only screen and (max-width: 400px) {
     .asideImage img{

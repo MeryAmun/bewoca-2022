@@ -4,7 +4,7 @@ const StaffCard = ({ position, name, image, details}) => {
   return (
     <Card className="card border bg-secondary text-white">
       <div className="staffImage">
-        <img className="" src={image} alt="Third slide" />
+        <img  src={image} alt="Third slide" />
       </div>
       <Card.Body>
         <Card.Title>

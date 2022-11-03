@@ -80,7 +80,7 @@ export const activitiesData ={
 
 export const staff = [
     {
-       name:"Ngoin Nsama E. Chebisi", position:"Founder", image:new46, details:` is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa `
+       name:"Ngoin Nsama E. Chebisi", position:"Founder and CEO", image:new46, details:` is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa `
     },
     {
         name:"Perpetua Akwi", position:"Founder", image:new46, details:` is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa `
