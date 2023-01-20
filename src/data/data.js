@@ -1,5 +1,5 @@
 import {  activities2, donate1,donate2,donate3,partner1,Image1,Image2,Image3,about3,about4, new1,new2,new4,new5,new6,new7,new8,new9,new10,new13,new14,new15,new16,new18,new26,new28,new29
-    ,new31,new34,new35,new38, new39, new41,  new43, new45, new46, } from "../assets/index"
+    ,new31,new34,new35,new38, new39, new41,  new43, new45, new46, pepsi,  caro2, } from "../assets/index"
 
 
 
@@ -83,10 +83,10 @@ export const staff = [
        name:"Ngoin Nsama E. Chebisi", position:"Founder and CEO", image:new46, details:` is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa `
     },
     {
-        name:"Perpetua Akwi", position:"Founder", image:new46, details:` is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa `
+        name:"Perpetua Akwi", position:"Founder", image:pepsi, details:`This beautiful lady is our Public Relations Officer. Her efforts and commitment to the NGO is overwhelming.She has been there since the days of little beginnings, and she is a teacher by profession  `
      },
      {
-        name:"Fotang Caroline", position:"Founder", image:new46, details:` is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa `
+        name:"Fotang Caroline", position:"Founder", image:caro2, details:` is the Secretary of  Better World Community And Advocacy Organization. She is one of the most dedicated, who has worked tirelessly with the Organization since its creation. She is a Teacher by profession `
      },
      
      
