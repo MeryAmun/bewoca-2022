@@ -1,11 +1,11 @@
 import { Nav, Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import './donateCard.css'
-const DonateCard = ({ title, text, image, buttonTitle ,date}) => {
+const DonateCard = ({ title, text, image, buttonTitle ,date, id}) => {
   return (
-    <Card className="card border bg-secondary text-white">
+    <Card className="card border bg-secondary text-white m-0" key={id}>
       <div className="asideImage">
-        <img className="" src={image} alt="Third slide" />
+        <img className="" src={image} alt="Third slide"/>
       </div>
       <Card.Body>
         <Card.Title>

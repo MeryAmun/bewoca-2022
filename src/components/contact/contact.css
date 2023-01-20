@@ -16,7 +16,7 @@ font-weight: var( --medium-font);
 }
 .sentence{
     font-size: 22px;
-    font-size: var(--font-base);
+    font-family: var(--font-base);
     font-weight: var( --medium-font); 
 }
 .contact-main{

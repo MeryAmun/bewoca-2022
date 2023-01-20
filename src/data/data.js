@@ -80,13 +80,13 @@ export const activitiesData ={
 
 export const staff = [
     {
-       name:"Ngoin Nsama E. Chebisi", position:"Founder and CEO", image:new46, details:` is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa `
+       name:"Ngoin Nsama E. Chebisi", position:"Founder and CEO", image:new46, details:` This is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa Buea.Better World Community And Advocacy is a product of this heart that is always willing to reach out and help other people. `
     },
     {
-        name:"Perpetua Akwi", position:"Founder", image:pepsi, details:`This beautiful lady is our Public Relations Officer. Her efforts and commitment to the NGO is overwhelming.She has been there since the days of little beginnings, and she is a teacher by profession  `
+        name:"Perpetua Akwi", position:"Public Relations", image:pepsi, details:`This beautiful lady is our Public Relations Officer, who is ever present . Her efforts and commitment to the NGO is overwhelming, she is a teacher by profession  `
      },
      {
-        name:"Fotang Caroline", position:"Founder", image:caro2, details:` is the Secretary of  Better World Community And Advocacy Organization. She is one of the most dedicated, who has worked tirelessly with the Organization since its creation. She is a Teacher by profession `
+        name:"Fotang Caroline", position:"Secretary", image:caro2, details:` This is the Secretary General of  Better World Community And Advocacy Organization. She is one of the most dedicated, who has worked tirelessly with the Organization since its creation. She is a Teacher by profession `
      },
      
      
@@ -99,13 +99,13 @@ export const headerImages = {
 Image3,new7,new16,new5
     ],
     aboutHeaderImage:[
-        new4,new10,new13,new6
+        new4,new13,new6
     ],
     contactHeaderImage:[
         new9,new14,new15,new8
     ],
     partnershipsHeaderImage:[
-        new26,new28,new39,new5
+        new26,new39,new5
     ],
     educationHeaderImage:[
         new1,new2,new18,Image1,Image2

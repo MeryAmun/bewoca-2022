@@ -1,6 +1,6 @@
 import React, { useRef} from 'react';
 import { Link } from 'react-router-dom'
-import { Nav, Navbar, NavDropdown, Form, FormControl } from  'react-bootstrap';
+import { Nav, Navbar, NavDropdown,Container, Form, FormControl } from  'react-bootstrap';
 import './navbar.css'
 import { logo } from '../../assets';
 
@@ -28,6 +28,7 @@ navEvents()
   return (
     <div>
       <Navbar className="d-flex justify-content-between">
+      <Container fluid>
         <Navbar.Brand className="" href="/">
           <div className="logo__container">
           <img
@@ -47,10 +48,12 @@ navEvents()
             <i className="ico fa fa-globe fa-2x" aria-hidden="true"></i>
           </Link>
         </Navbar.Brand>
+        </Container>
+       
       </Navbar>
-      <Nav className="nav justify-content-start  font-weight-bold bg-dark fixed" ref={navTag}>
+      <Nav className="nav  font-weight-bold bg-dark fixed" ref={navTag}>
         <span className="close text-white d-lg-none" aria-hidden="false" ref={close} onClick={closeSide}>&times;</span>
-        <Nav.Item className="item">
+        <Nav.Item className="">
           <Link to="/" className="link">HOME</Link>
         </Nav.Item>
         <Nav.Item className="item">
@@ -59,7 +62,7 @@ navEvents()
         <Nav.Item>
         
          
-        <NavDropdown className="drop" title="WHAT WE DO" id="nav-dropdown">
+        <NavDropdown title="WHAT WE DO" id="basic-nav-dropdown">
           <NavDropdown.Item><Link to="education" className='link'>SEX EDUCATION AND ECONOMIC EMPOWERMENT</Link></NavDropdown.Item>
           <NavDropdown.Item> <Link to="/violence" className='link'>GENDER BASED VIOLENCE AND RAPE</Link></NavDropdown.Item>
         </NavDropdown>

@@ -103,8 +103,26 @@ line-height: 20px;
   text-decoration: none;
   margin: .5rem;
 }
+/* 
+.activitiesContainer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
 
-.activitiesContainar{
+} */
+
+.activitiesContainer{
+display: block;
+margin: 1rem;
+
+
+
+}
+.team{
+margin: 1rem;
+
+
 
 }
 

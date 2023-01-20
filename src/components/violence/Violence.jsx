@@ -35,8 +35,9 @@ import { Container } from "react-bootstrap";
     </Container>
     <div className="activitiesContainer">
           {
-            activitiesData.violence.map((activity) => (
+            activitiesData.violence.map((activity,index) => (
               <DonateCard.default
+              key={index}
               title={activity.title}
               text={activity.text}
               image={activity.image}

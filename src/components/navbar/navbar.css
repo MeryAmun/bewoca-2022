@@ -1,5 +1,8 @@
 .nav{
     padding: 10px 12px;
+    /* display: block; */
+   justify-content: space-around;
+    align-items: center; 
 }
 .logo__container img{
     width: 60%;

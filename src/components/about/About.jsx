@@ -46,7 +46,7 @@ BEWOCA is built on love and Team work, and we are proud to have an amazing team 
           </div>
         </div>
       <Container>
-      <div className="activitiesContainer">
+      <div className="team">
           {
           staff.slice(1-3).map((person,index) => (
               <StaffCard.default

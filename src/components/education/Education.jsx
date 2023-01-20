@@ -39,8 +39,9 @@ const Education = () => {
         </section>
         <div className="activitiesContainer">
           {
-            activitiesData.education.map((activity) => (
+            activitiesData.education.map((activity,index) => (
               <DonateCard.default
+              key={index}
               title={activity.title}
               text={activity.text}
               image={activity.image}

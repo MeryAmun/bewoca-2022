@@ -17,8 +17,8 @@ const Contact = () => {
       </h3>
       <Container className='contact-main'>
         <div className="smallParagragh">
-          <p className='sentence'>
-          For all enquiries concerning child protection,youth activism , <br /> sponsorship, donations,jobs,press enquiries, etc, contact the following addresses.
+          <p className='sentence '>
+          For all enquiries concerning child protection,youth activism , <br /> sponsorship, donations, jobs, press enquiries, etc, contact the following addresses.
           <br />
           </p>
         </div>

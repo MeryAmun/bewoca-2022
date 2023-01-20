@@ -6,7 +6,7 @@ const StaffCard = ({ position, name, image, details}) => {
       <div className="staffImage">
         <img  src={image} alt="Third slide"  className="rounded-circle"/>
       </div>
-      <Card.Body>
+      <Card.Body className="d-flex  flex-column justify-content-center align-items-center">
         <Card.Title>
           <h3 className="font-weight-bold text-info asideTitle">{name}</h3>
         </Card.Title>
