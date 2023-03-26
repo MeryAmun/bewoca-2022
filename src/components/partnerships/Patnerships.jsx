@@ -6,6 +6,8 @@ import { Container,Button,Nav } from 'react-bootstrap';
 import {partnershipsData, headerImages} from '../../data/data'
 import {  CarouselCard } from "../../cards";
 import {  DonateCard } from '../../cards';
+import Fade from 'react-reveal/Fade';
+
 
 const Partnerships = () => {
 
@@ -19,17 +21,18 @@ const Partnerships = () => {
         
       />
       </h3>
-    <Container className=" fluid display-5-sm">
+    <Container className="activitiesContainer fluid display-5-sm">
         {
             partnershipsData.map((data,index) => (
              
-                <DonateCard.default
-                key={index}
+                <Fade bottom  key={index}>
+                  <DonateCard.default
                 title={data.title}
                 text={data.text}
                 image={data.image}
                 date={data.date}
                 />
+                </Fade>
             ))
         }
         <div className="buttonContainer">
