@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import './donate.css';
-import { Container,Button,Nav } from 'react-bootstrap';
+import { Button,Nav } from 'react-bootstrap';
 import {donateData} from '../../data/data'
 import {  DonateCard } from '../../cards';
 import Bounce from 'react-reveal/Bounce';
