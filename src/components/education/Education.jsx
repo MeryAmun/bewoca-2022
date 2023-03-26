@@ -9,7 +9,7 @@ import { activitiesData, headerImages } from "../../data/data";
 
 const Education = () => {
   return (
-    <div className="home">
+    <div className="education">
       <CarouselCard.default
         title2="Cross-section of some Products."
         images={headerImages.educationHeaderImage}
@@ -37,20 +37,21 @@ const Education = () => {
             />
           </aside>
         </section>
-        <div className="activitiesContainer">
+       
+      </Container>
+      <div className="activitiesContainer">
           {
-            activitiesData.education.map((activity,index) => (
+            activitiesData.education.map(({title,text,image,date},index) => (
               <DonateCard.default
               key={index}
-              title={activity.title}
-              text={activity.text}
-              image={activity.image}
-              date={activity.date}
+              title={title}
+              text={text}
+              image={image}
+              date={date}
               />
             ))
           }
         </div>
-      </Container>
     </div>
   );
 };

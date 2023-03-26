@@ -1,18 +1,24 @@
-.asideFloat img{
+.asideFloat{
     width: 100%;
     height: 200px;
+    object-fit: contain;
+    margin: 0;
 }
 .card{
     width: 100%;
-    margin: 1rem;
+    padding: 1rem;
 }
 
 
-@media only screen and (max-width: 400px) {
+@media (max-width: 576px) {
     .asideImage img{
         width: 100%;
         height: 20%;
     }
 
-  
+    .card{
+        width: 100%;
+        margin: 1rem;
+        border: 2px solid rgb(187, 9, 18);
+    }
   }

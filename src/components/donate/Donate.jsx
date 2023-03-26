@@ -4,19 +4,22 @@ import './donate.css';
 import { Container,Button,Nav } from 'react-bootstrap';
 import {donateData} from '../../data/data'
 import {  DonateCard } from '../../cards';
+import Bounce from 'react-reveal/Bounce';
 
 const Donate = () => {
     console.log(donateData)
   return (
-    <Container className="donateContainer fluid display-5-sm">
+    <div className="donateContainer fluid display-5-sm">
         {
-            donateData.map((data) => (
+            donateData.map(({title,text,image},index) => (
              
-                <DonateCard.default
-                title={data.title}
-                text={data.text}
-                image={data.image}
+               <Bounce top key={index}>
+                 <DonateCard.default
+                title={title}
+                text={text}
+                image={image}
                 />
+               </Bounce>
             ))
         }
         <div className="buttonContainer">
@@ -25,7 +28,7 @@ const Donate = () => {
           </Nav.Item>
           </Button>
         </div>
-        </Container>
+        </div>
   )
 }
 

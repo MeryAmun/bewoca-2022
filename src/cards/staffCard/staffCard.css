@@ -1,5 +1,5 @@
 .card{
-    width: 100%;
+    width: 500px;
     margin: .5rem;
     height: 50%;
     display: flex;
@@ -18,7 +18,10 @@
     
     
 }
-@media only screen and (max-width: 400px) {
+@media (max-width: 578px){
+    .card {
+        width: 100%;
+    }
     .asideImage img{
         width: 100%;
         height: 20%;

@@ -6,9 +6,7 @@ import { Link } from 'react-router-dom'
 const AsideCard = ({ title, text, image, buttonTitle }) => {
   return (
     <Card className="card border bg-secondary text-white">
-      <div className="asideFloat d-flex flex-wrap">
-        <img className="d-block" src={image} alt="Third slide" />
-      </div>
+        <img className="d-block asideFloat d-flex flex-wrap" src={image} alt="Third slide" />
       <Card.Body>
         <Card.Title>
           <h3 className="font-weight-bold text-info asideTitle">{title}</h3>

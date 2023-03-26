@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { AsideCard, CarouselCard } from "../../cards";
 import { war2} from "../../assets/index";
 import { headerImages } from "../../data/data";
+import {Slide, Bounce }from 'react-reveal';
 
 import "./home.css";
 
@@ -21,6 +22,7 @@ const Home = () => {
       <Container className="main-container">
           <section className="section">
               <div className="subsection">
+                <Slide bottom>
                 <p className="paragraph">
                   Welcome to Better World Community And Advocacy Organization
                   (BEWOCA) official website.Here we belief that a little effort
@@ -28,14 +30,18 @@ const Home = () => {
                   are A young NGO based in Bamenda, a city in the English
                   Speaking part of Cameroon.
                 </p>
+                </Slide>
+                <Bounce top>
                 <Button className="font-weight-bold bg-dark">
                   {" "}
                   <Nav.Item>
                     <Link className="link" to="/about">Learn More</Link>
                   </Nav.Item>
                 </Button>
+                </Bounce>
               </div>
-            <aside className="aside">
+           <Bounce bottom>
+           <aside className="aside">
               <AsideCard.default
               title='Empower a woman, save a family'
               text='Sponsor an Internally displaced person to learn a trade or
@@ -45,6 +51,7 @@ const Home = () => {
               image={war2}
               />
             </aside>
+           </Bounce>
           </section>
       </Container>
     </div>

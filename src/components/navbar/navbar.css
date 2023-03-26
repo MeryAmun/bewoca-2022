@@ -25,7 +25,7 @@
  
 
 
- @media screen and (max-width: 400px) {
+ @media  (max-width: 576px) {
   /*Nav button and close icon*/
   .ico{
     display: none;
