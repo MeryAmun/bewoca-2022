@@ -82,21 +82,22 @@ export const staff = [
     {
        name:"Ngoin Nsama E. Chebisi", position:"Founder and CEO", image:new46, details:` This is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa Buea.Better World Community And Advocacy is a product of this heart that is always willing to reach out and help other people. `
     },
-    {
-        name:"Perpetua Akwi", position:"Public Relations", image:pepsi, details:`This beautiful lady is our Public Relations Officer, who is ever present . Her efforts and commitment to the NGO is overwhelming, she is a teacher by profession  `
+   
+     {
+        name:"Perpetua Akwi", position:"Public Relations Officer", image:pepsi, details:`Public Relations Officer of  Better World Community And Advocacy Organization. Her efforts and commitment to the NGO is overwhelming, with the Organization since its creation. She is a Teacher by profession. `
      },
      {
-        name:"Fotang Caroline", position:"Secretary", image:caro2, details:` This is the Secretary General of  Better World Community And Advocacy Organization. She is one of the most dedicated, who has worked tirelessly with the Organization since its creation. She is a Teacher by profession `
+        name:"Fotang Caroline", position:"Secretary General", image:caro2, details:`Secretary General of  Better World Community And Advocacy Organization. She is one of the most dedicated, who has worked tirelessly with the Organization since its creation. She is a Teacher by profession. `
      },
      
      
      
 ]
 
-
+//https://hackerrelay.com/jobs/UioESROfMz
 export const headerImages = {
     homeHeaderImage:[
-Image3,new7,new16,new5
+Image3,new7,new16,new5,new14,new15,new8
     ],
     aboutHeaderImage:[
         new4,new13,new6

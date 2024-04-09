@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from "react";
-import { AsideCard, CarouselCard, StaffCard } from "../../cards";
+import { AsideCard, StaffCard } from "../../cards";
 import { about4 } from "../../assets";
-import { headerImages, staff } from "../../data/data";
+import { staff } from "../../data/data";
 import "./about.css";
 import { Container } from "react-bootstrap";
 import Bounce from "react-reveal/Bounce";
@@ -10,8 +10,6 @@ import Bounce from "react-reveal/Bounce";
 const About = () => {
   return (
     <div className="about">
-      <CarouselCard.default images={headerImages.aboutHeaderImage} />
-
       <Container className="main-container">
         <section className="section">
           <Bounce bottom>
@@ -70,7 +68,6 @@ const About = () => {
       </Container>
       <div className="ceo">
         <Bounce top>
-          <div className="ceoContainer">
             {
               <StaffCard.default
                 key={staff[0]}
@@ -80,10 +77,9 @@ const About = () => {
                 details={staff[0].details}
               />
             }
-          </div>
         </Bounce>
       </div>
-      <Container>
+
         <div className="team">
           {staff.slice(1 - 3).map((person, index) => (
             <Bounce right>
@@ -97,7 +93,7 @@ const About = () => {
             </Bounce>
           ))}
         </div>
-      </Container>
+
     </div>
   );
 };

@@ -1,26 +1,27 @@
 .card{
     width: 500px;
-    margin: .5rem;
-    height: 50%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .staffImage{
-    margin-top: .5rem;
-    justify-content: center;
+
+    width: 120px;
+    height: 130px;
    
 }
 .staffImage img{
    width:100% ;
-    height: 160px;
+    height: 100%;
+    object-fit: cover;
     
     
 }
 @media (max-width: 578px){
     .card {
-        width: 100%;
+        width: 400px;
     }
     .asideImage img{
         width: 100%;

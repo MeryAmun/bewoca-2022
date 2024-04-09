@@ -6,7 +6,7 @@ import {  About, Contact, Donate, Education, Footer, Home, Navigation, Partnersh
 const App = () => {
   return (
 
-    <div className='App'>
+    <div className='app'>
 <Navigation.default/>
         <Routes>
           <Route exact path='/' element={<Home.default/>}/>

@@ -1,25 +1,19 @@
 .home{
-    height: 100%;
-    background-color: rgb(198, 201, 204);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
 }
-/* section{
+section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
+    padding: 1rem;
 }
 aside{
-    margin-top: 20rem;
-    margin-right: -7rem;
-} */
+    flex: 1;
+}
 
 .paragragh{
-    margin: 2rem;
+    padding: 2rem;
 }
 
 @media only screen and (max-width: 400px) {

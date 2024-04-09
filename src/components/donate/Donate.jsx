@@ -9,7 +9,7 @@ import Bounce from 'react-reveal/Bounce';
 const Donate = () => {
     console.log(donateData)
   return (
-    <div className="donateContainer fluid display-5-sm">
+    <div className="donateContainer main-container">
         {
             donateData.map(({title,text,image},index) => (
              

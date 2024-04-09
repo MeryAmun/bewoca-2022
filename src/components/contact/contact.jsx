@@ -1,21 +1,23 @@
 /* eslint-disable react/jsx-pascal-case */
-import React from 'react'
+import React,{ useState,useEffect } from 'react'
 import './contact.css'
 import { Container,Nav } from 'react-bootstrap';
-import {  CarouselCard } from "../../cards";
-import { headerImages } from "../../data/data";
 import{ Slide,Rotate }from 'react-reveal';
+import ReactWhatsapp from "react-whatsapp";
+import { RiWhatsappLine } from "react-icons/ri";
+const phoneNumberOne = '+237674513391'
 
 const Contact = () => {
+  const [numberOne, setNumberOne] = useState("237677983166");
+
+
+  useEffect(() => {
+    if (phoneNumberOne !== null) {
+      setNumberOne(phoneNumberOne);
+    }
+  }, []);
   return (
     <div className='contact'>
-      <h3 className="contact-header title">
-      <CarouselCard.default
-        title2='Cross-section of some Products.'
-        images={headerImages.contactHeaderImage}
-        
-      />
-      </h3>
       <Container className='contact-main'>
         <div className="smallParagragh">
           <Slide bottom>
@@ -34,15 +36,32 @@ const Contact = () => {
          <p className='sentence'>You can also contact us on phone through the following numbers</p>
          </Slide>
           
-          <Slide top><h3 className="title font-weight-bold text-secondary"> <i className="fa fa-whatsapp" aria-hidden="true"></i>(+237) 674513391</h3>
-          <h3 className="title font-weight-bold text-secondary"><i className="fa fa-whatsapp" aria-hidden="true"></i>(+237) 654292637 </h3></Slide>
+          <Slide top>
+            <h3 className="title font-weight-bold text-secondary">
+          Mobile: (+237) 674513391</h3>
+          <h3 className="title font-weight-bold text-secondary">
+            Mobile: (+237) 654292637 </h3>
+          <div className="contact__details">
+            <ReactWhatsapp
+              number={numberOne}
+              message={`Hello sir/madame, good day! am contacting you from your website`}
+            >
+             <div className="whatsappPost__button">
+                <RiWhatsappLine
+                color="#06e651"
+                size={25}
+              />{" "}<h5 className="subtitle"> click to message on WhatsApp</h5>
+                </div>
+            </ReactWhatsapp>{" "}
+          </div>
+          </Slide>
           <Slide top>
           <h3 className="title font-weight-bold text-secondary"><i className="fa fa-envelope" aria-hidden="true"></i>bewocaa.org@gmail.com</h3>
           <h3 className="title font-weight-bold text-secondary"><i className="fa fa-envelope" aria-hidden="true"></i>bewoca2@gmail.com</h3>
           </Slide>
         </div>
-        <div className="social-media d-flex justify-content-evenly flex-row">
-        <h4 className="tex text-secondary">Follow Us</h4>
+        <div className="social-media flex-row">
+        
         <Rotate bottom right>
         <div className="applications">
         <span>

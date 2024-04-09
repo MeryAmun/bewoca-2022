@@ -33,7 +33,7 @@ const Footer = () => {
             <Link to="/donate" className="link">Donations</Link>
             </div>
           </div>
-    <div className="tex text-primary">Copy Right &copy; BEWOCA  {date}</div>
+    <div className="tex text-primary">&copy;BEWOCA  {date}</div>
         </div>
   )
 }

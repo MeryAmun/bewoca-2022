@@ -2,23 +2,17 @@
 import React from "react";
 import { Container, Button, Nav} from "react-bootstrap";
 import { Link } from 'react-router-dom'
-import { AsideCard, CarouselCard } from "../../cards";
+import { AsideCard } from "../../cards";
 import { war2} from "../../assets/index";
-import { headerImages } from "../../data/data";
 import {Slide, Bounce }from 'react-reveal';
-
 import "./home.css";
+
 
 // import { Image,Image1,Image2,Image3,Image4,Image5 } from '@mui/icons-material';
 
 const Home = () => {
   return (
     <div className="home">
-      <CarouselCard.default
-        title2='Cross-section of some Products.'
-        images={headerImages.homeHeaderImage}
-        
-      />
       <Container className="main-container">
           <section className="section">
               <div className="subsection">
@@ -26,7 +20,7 @@ const Home = () => {
                 <p className="paragraph">
                   Welcome to Better World Community And Advocacy Organization
                   (BEWOCA) official website.Here we belief that a little effort
-                  can make alot of difference in the life of an individual.We
+                  can make a lot of difference in the life of an individual.We
                   are A young NGO based in Bamenda, a city in the English
                   Speaking part of Cameroon.
                 </p>

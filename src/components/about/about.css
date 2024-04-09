@@ -1,6 +1,5 @@
 .about{
     height: 100%;
-    background-color: rgb(198, 201, 204);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,14 +10,13 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-   
     align-items: center;
 }
 .team{
     width: 100%;
     display: flex;
-    justify-content: space-between;
-   
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 .paragraph{
@@ -29,19 +27,12 @@
 .subsection{
 width: 100%;
 }
-.ceoContainer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-   
-    align-items: center;
-}
+
 .ceo{
     display: flex;
-    width: 500px;
     border-radius: 10px;
     justify-content: center;
-    height: 50%;
+    align-items: center;
     padding: 0;
 }
 
@@ -60,14 +51,15 @@ width: 100%;
         justify-content: space-between;
         align-items: center;
     }
-    .team{
+    /* .team{
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-       
-        align-items:flex-start;
-    }
+        justify-content: center;
+        gap: 10px;
+        align-items:center;
+        padding: 0;
+    } */
     .ceo{
         display: flex;
         width: 100%;

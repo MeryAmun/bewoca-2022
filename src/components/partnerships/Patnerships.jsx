@@ -3,8 +3,7 @@ import React from 'react';
 import './partnership.css';
 import { Link } from 'react-router-dom';
 import { Container,Button,Nav } from 'react-bootstrap';
-import {partnershipsData, headerImages} from '../../data/data'
-import {  CarouselCard } from "../../cards";
+import {partnershipsData} from '../../data/data'
 import {  DonateCard } from '../../cards';
 import Fade from 'react-reveal/Fade';
 
@@ -14,13 +13,6 @@ const Partnerships = () => {
   return (
 
    <div className="donateContainer">
-      <h3 className="contact-header title">
-      <CarouselCard.default
-        title2='Cross-section of some Products.'
-        images={headerImages.partnershipsHeaderImage}
-        
-      />
-      </h3>
     <Container className="activitiesContainer fluid display-5-sm">
         {
             partnershipsData.map((data,index) => (
