@@ -93,8 +93,6 @@ export const staff = [
      
      
 ]
-
-//https://hackerrelay.com/jobs/UioESROfMz
 export const headerImages = {
     homeHeaderImage:[
 new7,new16,new5,new14,new15,new8

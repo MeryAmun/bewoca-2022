@@ -1,0 +1,7 @@
+export { default as Blog } from './blogs/Blog'
+export{ default as Register } from './auth/register/Register'
+export { default as Login } from './auth/login/Login'
+export { default as Profile } from './auth/Profile/Profile'
+export { default as Events } from './Events/Events'
+export { default as CreateEvent } from './Events/CreateEvent'
+export { default as EditEvent } from './Events/EditEvent'

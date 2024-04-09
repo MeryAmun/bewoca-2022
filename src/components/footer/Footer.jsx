@@ -27,10 +27,11 @@ const Footer = () => {
            
           </div>
           <div className='d-flex flex-column text-primary'>
-          <Link to="/blogpage" className="link">Blog</Link>
-            <Link to="/contact" className="link">Contact Us</Link>
-            <Link to="/partnerships" className="link">Partnerships</Link>
-            <Link to="/donate" className="link">Donations</Link>
+          <Link to="/blog" className="link my-0">Blog</Link>
+            <Link to="/contact" className="link my-0">Contact Us</Link>
+            <Link to="/partnerships" className="link my-0">Partnerships</Link>
+            <Link to="/donate" className="link my-0">Donations</Link>
+            <Link to="/register" className="link my-0 opacity-0">Admin</Link>
             </div>
           </div>
     <div className="tex text-primary">&copy;BEWOCA  {date}</div>

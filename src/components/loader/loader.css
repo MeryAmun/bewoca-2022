@@ -1,0 +1,21 @@
+.loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    scroll-behavior: smooth;
+}
+
+.loader__LogoLink{
+    font-size: 1.57rem;
+    font-weight: 600;
+    line-height: 26px;
+    color: #5D8DD6;
+   
+    letter-spacing: 0.01rem;
+    font-family: var(--font-raleway);
+    text-decoration: none;
+}

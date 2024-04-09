@@ -17,7 +17,7 @@ const Navigation = () => {
    <div className="navbar-container  navbar-light bg-light">
      <nav className="navbar navbar-expand-lg navbar-light bg-light">
      <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    {/* <span class=""></span> */}
+    
     <div className="navbar-toggler-icon  logo__container">
             <img
               className="logo d-block w-20" src={logo} alt="logo"
@@ -37,7 +37,7 @@ const Navigation = () => {
             <Link to="/" className="link">HOME</Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="link">ABOUT US</Link>
+            <Link to="/about" className="link">ABOUT</Link>
           </li>
           <li className="nav-item">
           <Link to="education" className='link'>EDUCATION</Link>
@@ -46,16 +46,16 @@ const Navigation = () => {
           <Link to="/donate" className="link">DONATE</Link>
           </li>
           <li className="nav-item">
-          <Link to="/violence" className='link'>GENDER BASED VIOLENCE</Link>
+          <Link to="/violence" className='link'>GBV</Link>
           </li>
           <li className="nav-item">
  <Link to="/partnerships" className="link">PARTNERSHIPS</Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="link">CONTACT US</Link>
+            <Link to="/contact" className="link">CONTACT</Link>
           </li>
           <li className="nav-item">
-            <Link to="/blogpage" className="link">BLOG</Link>
+            <Link to="/blog" className="link">BLOG</Link>
           </li>
         </ul>
       </div>

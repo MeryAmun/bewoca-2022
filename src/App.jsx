@@ -2,23 +2,26 @@
 import React from 'react';
 import { Routes,Route } from 'react-router-dom'
 import {  About, Contact, Donate, Education, Footer, Home, Navigation, Partnerships, Violence} from './components/index'
+import { Blog,Register } from './pages';
 
 const App = () => {
   return (
 
     <div className='app'>
-<Navigation.default/>
+<Navigation/>
         <Routes>
-          <Route exact path='/' element={<Home.default/>}/>
-          <Route  path='/about' element={<About.default/>}/>
-          <Route  path='/contact' element={<Contact.default/>}/>
-          <Route  path='/donate' element={<Donate.default/>}/>
-          <Route  path='/violence' element={<Violence.default/>}/>
-          <Route  path='/education' element={<Education.default/>}/>
-          <Route  path='/partnerships' element={<Partnerships.default/>}/>
-
+          <Route exact path='/' element={<Home/>}/>
+          <Route  path='/about' element={<About/>}/>
+          <Route  path='/contact' element={<Contact/>}/>
+          <Route  path='/donate' element={<Donate/>}/>
+          <Route  path='/violence' element={<Violence/>}/>
+          <Route  path='/education' element={<Education/>}/>
+          <Route  path='/partnerships' element={<Partnerships/>}/>
+          <Route  path='/blog' element={<Blog/>}/>
+          <Route  path='/register' element={<Register/>}/>
+           
         </Routes>
-        <Footer.default/>
+        <Footer/>
     </div>
   )
 }

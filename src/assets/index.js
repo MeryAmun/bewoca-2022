@@ -67,6 +67,7 @@ import new46 from './images/c4.jpg'
 export { default as  pepsi } from './images/pepsi.jpg'
 export { default as  caro } from './images/caro.jpg'
 export { default as  caro2 } from './images/caro2.jpg'
+export { default as loader } from './images/loader.gif'
 
 
 
