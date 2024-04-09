@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import './violence.css'
-import { AsideCard, CarouselCard, DonateCard } from "../../cards";
-import { activitiesData, headerImages } from "../../data/data";
+import { AsideCard, DonateCard } from "../../cards";
+import { activitiesData } from "../../data/data";
 import {  new17 } from "../../assets";
 import { Container } from "react-bootstrap";
 import Fade from 'react-reveal/Fade';
@@ -10,12 +10,6 @@ import Fade from 'react-reveal/Fade';
  const Violence = () => {
   return (
     <div className="about">
-    <CarouselCard.default
-        title2="Cross-section of some Products."
-        images={headerImages.educationHeaderImage}
-       
-      />
-
     <Container className="main-container">
       <section className="section">
         <div className="subsection">
@@ -36,7 +30,7 @@ import Fade from 'react-reveal/Fade';
  </Fade>
       </section>
     </Container>
-    <div className="activitiesContainer">
+    <div className="violenceContainer">
           {
             activitiesData.violence.map((activity,index) => (
               <Fade top  key={index}>

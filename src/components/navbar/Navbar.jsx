@@ -39,8 +39,8 @@ const Navigation = () => {
           <li className="nav-item">
             <Link to="/about" className="link">ABOUT US</Link>
           </li>
-          {/* <li className="nav-item">
-          <Link to="education" className='link'>SEX EDUCATION AND ECONOMIC EMPOWERMENT</Link>
+          <li className="nav-item">
+          <Link to="education" className='link'>EDUCATION</Link>
           </li>
           <li className="nav-item">
           <Link to="/donate" className="link">DONATE</Link>
@@ -50,7 +50,7 @@ const Navigation = () => {
           </li>
           <li className="nav-item">
  <Link to="/partnerships" className="link">PARTNERSHIPS</Link>
-          </li> */}
+          </li>
           <li className="nav-item">
             <Link to="/contact" className="link">CONTACT US</Link>
           </li>

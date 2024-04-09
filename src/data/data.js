@@ -1,4 +1,4 @@
-import {  activities2, donate1,donate2,donate3,partner1,Image1,Image2,Image3,about3,about4, new1,new2,new4,new5,new6,new7,new8,new9,new13,new14,new15,new16,new18,new26,new29
+import {  activities2, donate1,donate2,donate3,partner1,Image1,Image2,about3,about4, new1,new2,new4,new5,new6,new7,new8,new9,new13,new14,new15,new16,new18,new26,new29
     ,new31,new34,new35,new38, new39, new41,  new43, new45, new46, pepsi,  caro2, } from "../assets/index"
 
 
@@ -97,7 +97,7 @@ export const staff = [
 //https://hackerrelay.com/jobs/UioESROfMz
 export const headerImages = {
     homeHeaderImage:[
-Image3,new7,new16,new5,new14,new15,new8
+new7,new16,new5,new14,new15,new8
     ],
     aboutHeaderImage:[
         new4,new13,new6

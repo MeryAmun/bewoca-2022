@@ -3,18 +3,14 @@ import React from "react";
 import { Container, Button, Nav } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import "./education.css"
-import { AsideCard, CarouselCard, DonateCard } from "../../cards";
+import { AsideCard, DonateCard } from "../../cards";
 import { war2 } from "../../assets/index";
-import { activitiesData, headerImages } from "../../data/data";
+import { activitiesData } from "../../data/data";
 
 const Education = () => {
   return (
     <div className="education">
-      <CarouselCard.default
-        title2="Cross-section of some Products."
-        images={headerImages.educationHeaderImage}
-       
-      />
+  
       <Container className="main-container">
         <section className="section">
           <div className="subsection">

@@ -1,21 +1,25 @@
 .education{
     width: 100%;
     overflow-x: hidden;
-    background-color: rgb(198, 201, 204);
 }
 .educationBlog{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     height: 70vh;
+    border: 2px solid forestgreen;
     
 }
 
-/* .activitiesContainer{
+.activitiesContainer{
     width: 100%;
-    border: 2px solid red;
-   display: block;
+    /* border: 2px solid red; */
+   display:flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+  
     
     
-} */
+}
 
