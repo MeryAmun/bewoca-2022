@@ -53,6 +53,8 @@ const Register = () => {
         .catch((error) => {
           const errorMessage = error.message;
           setMessage(errorMessage);
+          setError(errorMessage)
+          setLoading(false)
         });
     } else {
       showValidationMessage(true);

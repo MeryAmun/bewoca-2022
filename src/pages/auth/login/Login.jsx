@@ -51,6 +51,7 @@ const handleSubmit = (e) => {
         //   const errorMessage = error.message;
         //   setMessage(errorMessage)
         // });
+        //navigate('/profile')
   } else {
     showValidationMessage(true);
   }

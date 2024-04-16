@@ -7,16 +7,14 @@ import { headerImages } from '../../data/data';
 
 
 
-
-const Navigation = () => {
-
-
+const path = window.location.pathname;
+const Navigation = ({user}) => {
 
 
   return (
-   <div className="navbar-container  navbar-light bg-light">
-     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-     <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+   <div className="navbar-container  navbar-dark bg-dark">
+     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+     <div className="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     
     <div className="navbar-toggler-icon  logo__container">
             <img
@@ -60,9 +58,13 @@ const Navigation = () => {
         </ul>
       </div>
     </nav>
-    <ImageSlider
-     images={headerImages.homeHeaderImage}
-    />
+   {
+    path === "/create-event" || path ==="/edit-event" || path ===`/profile/${user}` ? null : (
+      <ImageSlider
+      images={headerImages.homeHeaderImage}
+     />
+    )
+   }
    </div>
   )
   

@@ -1,11 +1,10 @@
 import { Navigate,Outlet } from "react-router-dom";
-import { useSelector } from "react-redux";
- const ProtectedRoute = ({
-  redirectPath = '/',
-}) => {
-  const { user } = useSelector((state) => state.user);
-  const { displayName } = user || {};
-  if (!displayName) {
+
+ const ProtectedRoute = (props) => {
+  const redirectPath = '/'
+  
+ console.log(props)
+  if (!props.user) {
     return <Navigate to={redirectPath} />;
   }
 

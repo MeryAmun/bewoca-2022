@@ -51,12 +51,13 @@ export const getAllPosts = () => async (dispatch) => {
     signInWithEmailAndPassword(auth, email,password)
         .then((userCredential) => {
           // Signed in
-          const user = userCredential?.user;
+          const user = userCredential?.user.displayName;
+          console.log(user)
           // ...
           dispatch({ type: action.LOG_IN_USER, payload: user })
         
           dispatch({ type: action.END_LOADING})
-          navigate('/')
+          navigate(`/profile/${user}`)
         })
         .catch((error) => {
           const errorMessage = error.message;

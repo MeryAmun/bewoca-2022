@@ -6,7 +6,8 @@ export { default as Contact } from './contact/contact'
 export { default as Donate } from './donate/Donate' 
 export { default as Violence  }from './violence/Violence';
 export { default as Education} from './education/Education';
-export {default as Partnerships } from './partnerships/Patnerships';
+export {default as Partnerships } from './partnerships/Partnerships';
 export { default as Header } from './header/Header'
 export { default as ImageSlider } from './ImageSlider/ImageSlider'
+export { default as ProtectedRoute } from './ProtectedRoute/ProtectedRoute'
 

@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { loader } from "../../assets";
 import useValidator from "../../utils/CustomValidator";
-import { MdPhotoCamera } from "react-icons/md";
-import { db, storage } from "../../firebaseConfig";
+import { MdOutlineDesktopAccessDisabled, MdPhotoCamera } from "react-icons/md";
+import { auth, db, storage } from "../../firebaseConfig";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import PhoneInput from "react-phone-input-2";
@@ -15,11 +15,10 @@ const CreateEvent = () => {
   const [currentFile, setCurrentFile] = useState(null);
   const [friendData, setFriendData] = useState({
     title: "",
-    lastName: "",
-    city: "",
-    eventType: "",
-    location: "",
-    date: "",
+    fullName: "",
+    category: "",
+    details:"",
+
 
   });
 
@@ -28,27 +27,17 @@ const CreateEvent = () => {
   const [validator, showValidationMessage] = useValidator();
   const [progress, setProgress] = useState(0);
   const [previewImage, setPreviewImage] = useState(null);
-  const [phoneNumber, setPhoneNumber] = useState(null);
   const [error, setError] = useState("");
   const [message, setMessage] = useState(null);
 
   const {
     title,
-    lastName,
-    city,
-    eventType,
-    location,
-    date,
+    fullName,
+    category,
+    details
   } = friendData;
 
-  useEffect(() => {
-    const result = document.getElementById('phone__input').getElementsByClassName('special-label');
-    result[0].style.display = 'none';
-  }, []);
 
-  const handlePhoneInputChange = (phone) => {
-    setPhoneNumber(phone);
-  };
  
   const onFileChangeHandler = (e) => {
     setCurrentFile(e.target.files[0]);
@@ -64,7 +53,7 @@ const CreateEvent = () => {
       setError("Please choose a file first!");
     } else {
       setError("");
-      const storageRef = ref(storage, `/profile/${currentFile.name}`);
+      const storageRef = ref(storage, `/posts/${currentFile.name}`);
       const uploadTask = uploadBytesResumable(storageRef, currentFile);
       uploadTask.on(
         "state_changed",
@@ -91,16 +80,13 @@ const CreateEvent = () => {
               .catch((err) => console.log(err));
             if (message === "upload success" && validator.allValid()) {
               setLoading(true);
-              addDoc(collection(db, "friends"), {
+              addDoc(collection(db, `/events/${auth.currentUser.uid}`), {
                 addedOn: serverTimestamp(),
                 profileUrl: url,
                 title: title,
-                lastName: lastName,
-                city: city,
-                eventType: eventType,
-                location: location,
-                date: date,
-                phone: phoneNumber
+                fullName: fullName,
+                category: category,
+                details:details
               });
               setProgress(0);
               setPreviewImage(null);
@@ -121,7 +107,7 @@ const CreateEvent = () => {
     setFriendData({ ...friendData, [e.target.name]: value });
   };
   return (
-    <div className="addFriend">
+    <div className="createPost">
     <div className="friendData__create_post">
 
       {currentFile ? (
@@ -130,26 +116,26 @@ const CreateEvent = () => {
       </div>
       ) : null}
       
-      <form onSubmit={onHandleUpload} className="addFriend__form">
-        <div className="addFriend__header">
-          <h3 className="">ADD A FRIEND</h3>
+      <form onSubmit={onHandleUpload} className="createPost__form  bg-secondary">
+        <div className="createPost__header">
+          <h3 className="">CREATE A POST</h3>
         </div>
         <div className="image__uploadContainer">
-          <label className="addFriend__label">Upload Photo</label>
-         
+          {/* <label className="createPost__label">Upload Photo</label> */}
+          <MdPhotoCamera size={20} color="" />
             <input
-              hidden
+              
               accept="image/*"
               type="file"
-              multiple
+              // multiple
               onChange={onFileChangeHandler}
             />
-            <MdPhotoCamera size={20} color="" />
+            {/* </MdPhotoCamera> */}
         </div>
         <div className="preview__container">
         {previewImage && (
         <div className="my-2">
-          <div className="addFriend__preview-image">
+          <div className="createPost__preview-image">
             <img
               className="rounded-circle"
               src={previewImage}
@@ -159,9 +145,25 @@ const CreateEvent = () => {
         </div>
       )}
         </div>
-
-        <div className="addFriend__input">
-          <label className="addFriend__label">First Name</label>
+        <div className="createPost__input">
+          <label className="createPost__label">Full Name</label>
+          <input
+            type="text"
+            name="fullName"
+            value={friendData.fullName}
+            onChange={handleInputChange}
+            className=""
+          />
+          <label className="createPost__error text-danger">
+            {validator.message("fullName", friendData.fullName, "required|fullName", {
+              messages: {
+                required: "required",
+              },
+            })}
+          </label>
+        </div>
+        <div className="createPost__input">
+          <label className="createPost__label">Title</label>
           <input
             type="text"
             name="title"
@@ -169,7 +171,7 @@ const CreateEvent = () => {
             onChange={handleInputChange}
             className=""
           />
-          <label className="addFriend__error text-danger">
+          <label className="createPost__error text-danger">
             {validator.message("title", friendData.title, "required|title", {
               messages: {
                 required: "required",
@@ -178,154 +180,45 @@ const CreateEvent = () => {
           </label>
         </div>
 
-        <div className="addFriend__input">
-          <label className="addFriend__label">Last Name</label>
-          <input
+        <div className="createPost__input">
+          <label className="createPost__label">Category</label>
+          <select
             type="text"
-            name="lastName"
-            value={friendData.lastName}
+            name="category"
+            value={friendData.category}
             onChange={handleInputChange}
             className=""
-          />
-          <label className="addFriend__error text-danger">
-            {validator.message("lastName", friendData.lastName, "required|lastName", {
+          >
+            <option value="education">Education</option>
+            <option value="health">Health</option>
+            <option value="partnership">Partnerships</option>
+            {/* <option value="education">Education</option> */}
+          </select>
+          <label className="createPost__error text-danger">
+            {validator.message("category", friendData.category, "required|category", {
               messages: {
                 required: "required",
               },
             })}
           </label>
         </div>
-        <div className="addFriend__input">
-          <label className="addFriend__label">City</label>
-          <input
+        <div className="createPost__input">
+          <label className="createPost__label">Details</label>
+          <textarea
             type="text"
-            name="city"
-            value={friendData.city}
+            name="details"
+            value={friendData.details}
             onChange={handleInputChange}
             className=""
-          />
-          <label className="addFriend__error text-danger">
-            {validator.message("city", friendData.city, "required|city", {
-              messages: {
-                required: "required",
-              },
-            })}
-          </label>
-        </div>
-        <div className="addFriend__input">
-          <label className="addFriend__label">eventType</label>
-          <input
-            type="text"
-            name="eventType"
-            value={friendData.eventType}
-            onChange={handleInputChange}
-            className=""
-          />
-          <label className="addFriend__error text-danger">
+            cols="40" rows="10"
+          
+          >
+            </textarea>
+          <label className="createPost__error text-danger">
             {validator.message(
               "eventType",
-              friendData.eventType,
-              "required|eventType",
-              {
-                messages: {
-                  required: "required",
-                },
-              }
-            )}
-          </label>
-        </div>
-        <div className="addFriend__input">
-          <label className="addFriend__label">location</label>
-          <input
-            type="text"
-            name="location"
-            value={friendData.location}
-            onChange={handleInputChange}
-            className=""
-          />
-          <label className="addFriend__error text-danger">
-            {validator.message(
-              "location",
-              friendData.location,
-              "required|location",
-              {
-                messages: {
-                  required: "required",
-                },
-              }
-            )}
-          </label>
-        </div>
-        <div className="addFriend__input">
-          <label className="addFriend__label">date</label>
-          <input
-            type="date"
-            name="date"
-            value={friendData.date}
-            onChange={handleInputChange}
-            className=""
-          />
-          <label className="addFriend__error text-danger">
-            {validator.message(
-              "date",
-              friendData.date,
-              "required|date",
-              {
-                messages: {
-                  required: "required",
-                },
-              }
-            )}
-          </label>
-        </div>
-
-        <div className="addFriend__input" id="phone__input">
-          <label className="addFriend__label">Phone Number (WhatsApp)</label>
-          <PhoneInput
-            type="text"
-            country={"us"}
-            enableAreaCodes={true}
-            // onlyCountries={['us','de','ro']}
-            // areaCodes={{us: ['999']}}
-            inputProps={{
-              name: "phoneNumber",
-              country: "us",
-              required: true,
-              autoFocus: true,
-            }}
-            // containerStyle={{
-            //   Padding: "5px",
-            // }}
-            inputStyle={{
-              width: "300px",
-              height: "42px",
-              borderRadius: "10px",
-              outline: "none",
-              margin: "10px 0",
-              padding: "10px 15px",
-              backgroundColor: "#fff",
-              border: "none",
-            }}
-            regions={["north-america", "africa", "europe"]}
-            value={phoneNumber}
-            onChange={handlePhoneInputChange}
-            // onChange={props.inputChange}
-            // value={props.data.phonNumber}
-            isValid={(value, country) => {
-              if (value.match(/12345/)) {
-                return "Invalid value: " + value + ", " + country.name;
-              } else if (value.match(/1234/)) {
-                return false;
-              } else {
-                return true;
-              }
-            }}
-          />
-          <label className="error text-danger">
-            {validator.message(
-              "phoneNumber",
-              phoneNumber,
-              "required|phoneNumber",
+              friendData.details,
+              "required|details",
               {
                 messages: {
                   required: "required",
@@ -338,8 +231,8 @@ const CreateEvent = () => {
           <span className="text-danger">{error}</span>
         </div>
         {loading && <img src={loader} alt="" className="loading__image" />}
-        <button type="submit" className="addFriend__submit">
-          ADD FRIEND
+        <button type="submit" className="createPost__submit">
+          CREATE
         </button>
         {error && (
           <div className="form-group">

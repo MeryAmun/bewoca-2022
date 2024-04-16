@@ -3,7 +3,7 @@ import './footer.css';
 import { Link } from 'react-router-dom'
 
 
-const Footer = () => {
+const Footer = ({user}) => {
     const date = new Date().getFullYear()
   return (
     <div className="footer">
@@ -31,7 +31,13 @@ const Footer = () => {
             <Link to="/contact" className="link my-0">Contact Us</Link>
             <Link to="/partnerships" className="link my-0">Partnerships</Link>
             <Link to="/donate" className="link my-0">Donations</Link>
-            <Link to="/register" className="link my-0 opacity-0">Admin</Link>
+            {
+              user ? (
+                <Link to={`/profile/${user}`} className="link my-0">Profile</Link>
+              ) : (
+                <Link to="/login" className="link my-0 opacity-0">Admin</Link>
+              )
+            }
             </div>
           </div>
     <div className="tex text-primary">&copy;BEWOCA  {date}</div>
