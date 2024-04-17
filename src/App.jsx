@@ -5,7 +5,7 @@ import {  About, Contact, Donate, ProtectedRoute,Education, Footer, Home, Naviga
 import { Blog,Login, Profile,CreateEvent,EditEvent } from './pages';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebaseConfig';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -37,6 +37,7 @@ const App = () => {
           <Route element={<ProtectedRoute user={user}/>}>
           <Route  path='/profile/:name' element={<Profile user={user}/>}/>
           <Route  path='/create-event' element={<CreateEvent/>}/>
+          <Route  path='/event/:id' element={<EditEvent/>}/>
            </Route>
         </Routes>
         <Footer user={user}/>

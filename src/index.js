@@ -6,6 +6,7 @@ import { applyMiddleware, compose, createStore} from 'redux'
 import {thunk }from 'redux-thunk'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reducer from './redux/index'
 const store = createStore(reducer, compose(applyMiddleware(thunk)));
