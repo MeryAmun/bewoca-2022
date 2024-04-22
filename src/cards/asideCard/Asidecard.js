@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const AsideCard = ({ title, text, image, buttonTitle }) => {
   return (
-    <Card className="card border bg-secondary text-white">
+    <div className="asideCard border bg-secondary text-white">
         <img className="d-block asideFloat d-flex flex-wrap" src={image} alt="Third slide" />
       <Card.Body>
         <Card.Title>
@@ -19,7 +19,7 @@ const AsideCard = ({ title, text, image, buttonTitle }) => {
           </Nav.Item>
         </Button>
       </Card.Body>
-    </Card>
+    </div>
   );
 };
 export default AsideCard;

@@ -4,21 +4,21 @@
     object-fit: contain;
     margin: 0;
 }
-.card{
+.asideCard{
     width: 100%;
     padding: 1rem;
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
     .asideImage img{
         width: 100%;
         height: 20%;
     }
 
-    .card{
-        width: 100%;
-        margin: 1rem;
-        border: 2px solid rgb(187, 9, 18);
+    .asideCard{
+        width: 350px;
+        padding: 1rem;
+      
     }
   }

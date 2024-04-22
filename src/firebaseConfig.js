@@ -18,7 +18,7 @@ const firebaseConfig = {
   appId: "1:758965558100:web:6241fd9b3ba04fa975c6c1",
   measurementId: "G-27WEYJQVT5"
 };
-
+//gsutil cors set cors.json gs://bewoca-da3aa.appspot.com
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 //const analytics = getAnalytics(app);

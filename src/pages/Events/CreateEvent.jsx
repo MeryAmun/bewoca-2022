@@ -1,23 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { loader } from "../../assets";
 import useValidator from "../../utils/CustomValidator";
-import { MdOutlineDesktopAccessDisabled, MdPhotoCamera } from "react-icons/md";
+import {  MdPhotoCamera } from "react-icons/md";
 import { auth, db, storage } from "../../firebaseConfig";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import PhoneInput from "react-phone-input-2";
+//import PhoneInput from "react-phone-input-2";
 import './styles.css'
 
 const CreateEvent = () => {
-  const [image, setImage] = useState(null);
+  // const [image, setImage] = useState(null);
   const [url, setUrl] = useState(null);
   const [currentFile, setCurrentFile] = useState(null);
-  const [friendData, setFriendData] = useState({
+  const [eventData, setEventData] = useState({
     title: "",
     fullName: "",
     category: "",
     details:"",
+    date:""
 
 
   });
@@ -34,8 +35,9 @@ const CreateEvent = () => {
     title,
     fullName,
     category,
-    details
-  } = friendData;
+    details,
+    date
+  } = eventData;
 
 
  
@@ -46,13 +48,16 @@ const CreateEvent = () => {
     }
   };
 
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    setEventData({ ...eventData, [e.target.name]: value });
+  };
   const onHandleUpload = (e) => {
-    setLoading(true);
     e.preventDefault();
+    setLoading(true);
     if (!currentFile) {
       setError("Please choose a file first!");
     } else {
-      setError("");
       const storageRef = ref(storage, `/posts/${currentFile.name}`);
       const uploadTask = uploadBytesResumable(storageRef, currentFile);
       uploadTask.on(
@@ -70,45 +75,42 @@ const CreateEvent = () => {
         async () => {
           await getDownloadURL(uploadTask.snapshot.ref).then((url) => {
             setUrl(url)
-              // setProgress(0);
-              // setPreviewImage(null);
-              // setCurrentFile(null);
-
-              .then(() => {
-                setMessage("upload success");
-              })
-              .catch((err) => console.log(err));
-            if (message === "upload success" && validator.allValid()) {
-              setLoading(true);
-              addDoc(collection(db, `/events/${auth.currentUser.uid}`), {
-                addedOn: serverTimestamp(),
-                profileUrl: url,
-                title: title,
-                fullName: fullName,
-                category: category,
-                details:details
-              });
-              setProgress(0);
-              setPreviewImage(null);
-              setLoading(false);
-              navigate("/");
-            } else {
-              showValidationMessage(true);
-              setLoading(false);
-            }
-          });
+            setMessage("upload success")
+             //setProgress(0);
+             //setPreviewImage(null);
+            // setCurrentFile(null)
+         
+          })
+          // .catch((err) => console.log(err));
+          console.log(message)
+          console.log(url)
+          if (message === "upload success" && validator.allValid()) {
+            addDoc(collection(db,`/events`), {
+              postedOn: serverTimestamp(),
+              imageUrl: url,
+              title: title,
+              fullName: fullName,
+              category: category,
+              details:details,
+              dateOfEvent:date
+            });
+            setProgress(0);
+            setPreviewImage(null);
+            setLoading(false);
+            navigate("/");
+          } else {
+            showValidationMessage(true);
+            setLoading(false);
+          }
         }
       )
     }
   };
 
-  const handleInputChange = (e) => {
-    const value = e.target.value;
-    setFriendData({ ...friendData, [e.target.name]: value });
-  };
+
   return (
     <div className="createPost">
-    <div className="friendData__create_post">
+    <div className="eventData__create_post">
 
       {currentFile ? (
         <div class="progress">
@@ -150,12 +152,12 @@ const CreateEvent = () => {
           <input
             type="text"
             name="fullName"
-            value={friendData.fullName}
+            value={eventData.fullName}
             onChange={handleInputChange}
             className=""
           />
           <label className="createPost__error text-danger">
-            {validator.message("fullName", friendData.fullName, "required|fullName", {
+            {validator.message("fullName", eventData.fullName, "required|fullName", {
               messages: {
                 required: "required",
               },
@@ -167,12 +169,12 @@ const CreateEvent = () => {
           <input
             type="text"
             name="title"
-            value={friendData.title}
+            value={eventData.title}
             onChange={handleInputChange}
             className=""
           />
           <label className="createPost__error text-danger">
-            {validator.message("title", friendData.title, "required|title", {
+            {validator.message("title", eventData.title, "required|title", {
               messages: {
                 required: "required",
               },
@@ -185,17 +187,18 @@ const CreateEvent = () => {
           <select
             type="text"
             name="category"
-            value={friendData.category}
+            value={eventData.category}
             onChange={handleInputChange}
             className=""
           >
+            <option>Select Category</option>
             <option value="education">Education</option>
             <option value="health">Health</option>
             <option value="partnership">Partnerships</option>
             {/* <option value="education">Education</option> */}
           </select>
           <label className="createPost__error text-danger">
-            {validator.message("category", friendData.category, "required|category", {
+            {validator.message("category", eventData.category, "required|category", {
               messages: {
                 required: "required",
               },
@@ -207,7 +210,7 @@ const CreateEvent = () => {
           <textarea
             type="text"
             name="details"
-            value={friendData.details}
+            value={eventData.details}
             onChange={handleInputChange}
             className=""
             cols="40" rows="10"
@@ -217,7 +220,7 @@ const CreateEvent = () => {
           <label className="createPost__error text-danger">
             {validator.message(
               "eventType",
-              friendData.details,
+              eventData.details,
               "required|details",
               {
                 messages: {
@@ -226,6 +229,16 @@ const CreateEvent = () => {
               }
             )}
           </label>
+        </div>
+        <div className="createPost__input">
+          <label className="createPost__label">Date (If Event already Happened)</label>
+          <input
+            type="date"
+            name="date"
+            value={eventData.date}
+            onChange={handleInputChange}
+            className=""
+          />
         </div>
         <div className="imageUpload__error">
           <span className="text-danger">{error}</span>

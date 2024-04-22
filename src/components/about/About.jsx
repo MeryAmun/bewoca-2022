@@ -4,13 +4,12 @@ import { AsideCard, StaffCard } from "../../cards";
 import { about4 } from "../../assets";
 import { staff } from "../../data/data";
 import "./about.css";
-import { Container } from "react-bootstrap";
 import Bounce from "react-reveal/Bounce";
 
 const About = () => {
   return (
     <div className="about">
-      <Container className="main-container">
+      <div className="main-container">
         <section className="section">
           <Bounce bottom>
             <div className="subsection">
@@ -65,7 +64,7 @@ const About = () => {
             </aside>
           </Bounce>
         </section>
-      </Container>
+      </div>
       <div className="ceo">
         <Bounce top>
             {

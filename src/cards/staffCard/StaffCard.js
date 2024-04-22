@@ -2,7 +2,7 @@ import {  Card } from "react-bootstrap";
 import './staffCard.css'
 const StaffCard = ({ position, name, image, details}) => {
   return (
-    <div className="card border bg-secondary text-white">
+    <div className="card bg-secondary text-white">
       <div className="staffImage">
         <img  src={image} alt="Third slide"  className="rounded-circle"/>
       </div>

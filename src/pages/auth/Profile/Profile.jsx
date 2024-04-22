@@ -20,28 +20,23 @@ const Profile = ({user}) => {
 
   return (
     <div className="profile__container">
+      
+<div className="profile__dashboard">
+      <Link to='/create-event' className='profile__link'>
+        CREATE POST
+      </Link>
+
       <button className='profile__button'
 onClick={logOut}>
         LOGOUT
       </button>
-<div className="profile__dashboard">
-<Link to='/add-friend' className='profile__link'>
-        ADD NEW FRIEND
-      </Link>
-      <Link to='/create-event' className='profile__link'>
-        ADD NEW EVENT
-      </Link>
-<Link to='/add-to-gallery' className='profile__link'>
-        ADD TO GALLERY
-      </Link>
-
 
 </div>
       {/* ==========USER DETAILS============= */}
      <form className="body">
   <div className="">
   <div className="form-group">
-  <span>Username: {user} </span>
+  <span>Username: {user.toUpperCase()} </span>
      </div>
      {/* <div className="form-group">
      <span>Created Account on: {joinedOn}</span>
