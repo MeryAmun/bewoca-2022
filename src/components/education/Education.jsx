@@ -1,17 +1,16 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from "react";
-import { Container, Button, Nav } from "react-bootstrap";
+import { Button, Nav } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import "./education.css"
-import { AsideCard, DonateCard } from "../../cards";
-import { war2 } from "../../assets/index";
+import { DonateCard } from "../../cards";
 import { activitiesData } from "../../data/data";
 
 const Education = () => {
   return (
     <div className="education">
   
-      <Container className="main-container">
+      <div className="main-container">
         <section className="section">
           <div className="subsection">
             <p className="paragraph">
@@ -22,7 +21,7 @@ const Education = () => {
               </Nav.Item>
               </Button>
           </div>
-          <aside className="aside">
+          {/* <aside className="aside">
             <AsideCard.default
               title="Empower a woman, save a family"
               text="Sponsor an Internally displaced person to learn a trade or
@@ -31,10 +30,10 @@ const Education = () => {
               buttonTitle="Take Action"
               image={war2}
             />
-          </aside>
+          </aside> */}
         </section>
        
-      </Container>
+      </div>
       <div className="activitiesContainer">
           {
             activitiesData.education.map(({title,text,image,date},index) => (

@@ -2,7 +2,7 @@
 import React,{ useState,useEffect } from 'react'
 import './contact.css'
 import { Container,Nav } from 'react-bootstrap';
-import{ Slide,Rotate }from 'react-reveal';
+import { Slide,Rotate } from "react-awesome-reveal";
 import ReactWhatsapp from "react-whatsapp";
 import { RiWhatsappLine } from "react-icons/ri";
 const phoneNumberOne = '+237674513391'

@@ -4,7 +4,7 @@ import { AsideCard, StaffCard } from "../../cards";
 import { about4 } from "../../assets";
 import { staff } from "../../data/data";
 import "./about.css";
-import Bounce from "react-reveal/Bounce";
+import { Bounce } from "react-awesome-reveal";
 
 const About = () => {
   return (

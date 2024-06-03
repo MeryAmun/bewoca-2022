@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import "./login.css";
 import useValidator from "../../../utils/CustomValidator";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +8,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../../../firebaseConfig";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { signInAction } from "../../../redux/actions";
 
 
@@ -54,6 +54,8 @@ const handleSubmit = (e) => {
         //navigate('/profile')
   } else {
     showValidationMessage(true);
+    setLoading(false)
+    setMessage("")
   }
 };
   return (

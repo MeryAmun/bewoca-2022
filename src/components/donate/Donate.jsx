@@ -4,7 +4,7 @@ import './donate.css';
 import { Button,Nav } from 'react-bootstrap';
 import {donateData} from '../../data/data'
 import {  DonateCard } from '../../cards';
-import Bounce from 'react-reveal/Bounce';
+import { Bounce } from "react-awesome-reveal"
 
 const Donate = () => {
     console.log(donateData)

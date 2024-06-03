@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { loader } from "../../assets";
 import useValidator from "../../utils/CustomValidator";
 import {  MdPhotoCamera } from "react-icons/md";
-import { auth, db, storage } from "../../firebaseConfig";
+import {  db, storage } from "../../firebaseConfig";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 //import PhoneInput from "react-phone-input-2";

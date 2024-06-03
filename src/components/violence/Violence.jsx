@@ -5,7 +5,7 @@ import { AsideCard, DonateCard } from "../../cards";
 import { activitiesData } from "../../data/data";
 import {  new17 } from "../../assets";
 import { Container } from "react-bootstrap";
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
  const Violence = () => {
   return (

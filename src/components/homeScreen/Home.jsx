@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from "react";
-import { Container, Button, Nav} from "react-bootstrap";
+import { Button, Nav} from "react-bootstrap";
 import { Link } from 'react-router-dom'
 import { AsideCard } from "../../cards";
 import { war2} from "../../assets/index";
-import {Slide, Bounce }from 'react-reveal';
+import { Slide,Bounce } from "react-awesome-reveal";
 import "./home.css";
 
 
@@ -13,7 +13,7 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="home">
-      <Container className="main-container">
+      <div className="main-container">
           <section className="section">
               <div className="subsection">
                 <Slide bottom>
@@ -47,7 +47,7 @@ const Home = () => {
             </aside>
            </Bounce>
           </section>
-      </Container>
+      </div>
     </div>
   );
 };

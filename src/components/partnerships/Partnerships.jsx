@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Container,Button,Nav } from 'react-bootstrap';
 import {partnershipsData} from '../../data/data'
 import {  DonateCard } from '../../cards';
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 
 const Partnerships = () => {

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import { signOut } from "firebase/auth";
 import { Link } from 'react-router-dom'
 import './profile.css'
@@ -7,7 +6,7 @@ import { auth } from '../../../firebaseConfig'
 
 
 const Profile = ({user}) => {
-  const [loading, setLoading] = useState(false);
+
 
   /**===============LOGOUT=================== */
   const logOut = () => {
