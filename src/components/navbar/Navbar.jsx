@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './navbar.css'
 import { logo } from '../../assets';
 import ImageSlider from '../ImageSlider/ImageSlider';
-import { headerImages } from '../../data/data';
+import { headerImages, links } from '../../data/data';
 
 
 
@@ -31,30 +31,16 @@ const Navigation = ({user}) => {
           </div>
         </Link>
         <ul className="navbar-nav  mt-2 mt-lg-0">
-          <li className="nav-item active">
-            <Link to="/" className="link">HOME</Link>
+          {
+            links.map((link,index) => (
+              <li className="nav-item active" key={index}>
+            <Link to={link.path} className="link">{link.title}</Link>
           </li>
-          <li className="nav-item">
-            <Link to="/about" className="link">ABOUT</Link>
-          </li>
-          <li className="nav-item">
-          <Link to="education" className='link'>EDUCATION</Link>
-          </li>
-          <li className="nav-item">
-          <Link to="/donate" className="link">DONATE</Link>
-          </li>
-          <li className="nav-item">
-          <Link to="/violence" className='link'>GBV</Link>
-          </li>
-          <li className="nav-item">
- <Link to="/partnerships" className="link">PARTNERSHIPS</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact" className="link">CONTACT</Link>
-          </li>
-          <li className="nav-item">
+            ))
+          }
+          {/* <li className="nav-item">
             <Link to="/blog" className="link">BLOG</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

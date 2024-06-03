@@ -27,7 +27,7 @@ const Footer = ({user}) => {
            
           </div>
           <div className='d-flex flex-column text-primary'>
-          <Link to="/blog" className="link my-0">Blog</Link>
+          {/* <Link to="/blog" className="link my-0">Blog</Link> */}
             <Link to="/contact" className="link my-0">Contact Us</Link>
             <Link to="/partnerships" className="link my-0">Partnerships</Link>
             <Link to="/donate" className="link my-0">Donations</Link>

@@ -77,7 +77,17 @@ export const activitiesData ={
     ]
 }
 
-
+export const links = [
+    {title:"HOME", path:"/"},
+    {title:"ABOUT", path:"/about"},
+    {title:"EDUCATION", path:"/education"},
+    {title:"DONATE", path:"/donate"},
+    {title:"GENDER BASED VIOLENCE", path:"/violence"},
+    {title:"PARTNERSHIPS", path:"/partnerships"},
+    {title:"CONTACT", path:"/contact"},
+    // {title:"BLOG", path:"/blog"},
+    
+]
 export const staff = [
     {
        name:"Ngoin Nsama E. Chebisi", position:"Founder and CEO", image:new46, details:` This is the Founder and CEO of  Better World Community And Advocacy Organization. She is currently doing her Masters in Peace Conflict Management and International Relations at the Pan African Institute West Africa Buea.Better World Community And Advocacy is a product of this heart that is always willing to reach out and help other people. `

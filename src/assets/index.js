@@ -1,4 +1,4 @@
-import  logo from './images/logo.jpg';
+import  logo from './images/logo.png';
 import Image1 from "./images/d1.jpg"
 import Image2 from "./images/d2.jpg"
 import Image3 from "./images/d3.jpg"
